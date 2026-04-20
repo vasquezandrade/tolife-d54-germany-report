@@ -2509,7 +2509,7 @@ border: 0;
 </ul>
 <p>Each participant’s study timeline ends at the last visit with recorded data. Participants who ended early are <strong>not</strong> counted as “missing data” for visits they did not reach; the denominators below reflect this.</p>
 <p><strong>Data quality summary:</strong></p>
-<p>There is one outstanding data quality concern at this site: three participants (21010, 21029, 21030) attended T4 with complete data but have no T5 record and no visit note explaining why. Their T5 visits were due between July 2025 and February 2026, all before this export. PRI clarification is required to determine whether these represent undocumented withdrawals, losses to follow-up, or administrative gaps. All other data quality indicators are satisfactory: no unjustified missing values, no duplicate records, no date anomalies, and all clinical values within plausible ranges.</p>
+<p>There is one outstanding data quality concern at this site: three participants (21010, 21029, 21030) attended T4 with complete data but have no T5 record and no visit note explaining why. Their T5 visits were due between July 2025 and February 2026, all before this export. For the purposes of this report they are treated as having ended at T4, and are therefore <strong>not included in the T5 denominator</strong>; this decision requires confirmation from PRI. All other data quality indicators are satisfactory: no unjustified missing values, no duplicate records, no date anomalies, and all clinical values within plausible ranges.</p>
 <hr>
 </section>
 <section id="recruitment-over-time" class="level1" data-number="2">
@@ -2793,6 +2793,9 @@ border: 0;
 <h1 data-number="5"><span class="header-section-number">5</span> Data quality — variable-level completion by visit</h1>
 <p>Completion is computed <strong>only among participants who reached that visit</strong>. Spirometry and 6-Minute Walk Test are only expected at T1, T3, T5.</p>
 <p>Attendance-based denominators per visit: <strong>T1 = 46, T2 = 42, T3 = 40, T4 = 34, T5 = 22</strong>.</p>
+<blockquote class="blockquote">
+<p><strong>Note:</strong> Participants 21010, 21029, and 21030 are not included in the T5 denominator. They attended T4 with complete data but have no T5 record and no visit note explaining the absence. For this report they are treated as having ended at T4 pending confirmation from PRI.</p>
+</blockquote>
 <section id="heatmap" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="heatmap"><span class="header-section-number">5.1</span> Heatmap</h2>
 <p>The 6-Minute Walk Test (6MWD) is the variable with the lowest completion, particularly at T3 (78%), where it accounts for the majority of missing cells. Spirometry completion is notably strong — 100% at T1 and T5, and 90% at T3. Questionnaire-based outcomes (mMRC, CAT, CCQ, exacerbations) are generally complete across all visits. The selective nature of missingness — concentrated in the 6MWT — points to clinical contraindications rather than general data collection failures.</p>
@@ -3031,20 +3034,20 @@ border: 0;
 <p>The cohort reflects a moderate-to-severe COPD population: mean FEV1% predicted of 49%, with all participants classified as GOLD grade 2 or above (21 GOLD 2, 22 GOLD 3, 3 GOLD 4) and none below 30% predicted at baseline. Mean age is 66 years with a slight male predominance (57%). This distribution is consistent with the CSA inclusion criteria and provides an appropriate disease-severity range for evaluating the CSB monitoring platform.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="mrxxckytmz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#mrxxckytmz table {
+<div id="lwmaynxqyl" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#lwmaynxqyl table {
 font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 }
-#mrxxckytmz thead, #mrxxckytmz tbody, #mrxxckytmz tfoot, #mrxxckytmz tr, #mrxxckytmz td, #mrxxckytmz th {
+#lwmaynxqyl thead, #lwmaynxqyl tbody, #lwmaynxqyl tfoot, #lwmaynxqyl tr, #lwmaynxqyl td, #lwmaynxqyl th {
 border-style: none;
 }
-#mrxxckytmz p {
+#lwmaynxqyl p {
 margin: 0;
 padding: 0;
 }
-#mrxxckytmz .gt_table {
+#lwmaynxqyl .gt_table {
 display: table;
 border-collapse: collapse;
 line-height: normal;
@@ -3069,11 +3072,11 @@ border-left-style: none;
 border-left-width: 2px;
 border-left-color: #D3D3D3;
 }
-#mrxxckytmz .gt_caption {
+#lwmaynxqyl .gt_caption {
 padding-top: 4px;
 padding-bottom: 4px;
 }
-#mrxxckytmz .gt_title {
+#lwmaynxqyl .gt_title {
 color: #333333;
 font-size: 125%;
 font-weight: initial;
@@ -3084,7 +3087,7 @@ padding-right: 5px;
 border-bottom-color: #FFFFFF;
 border-bottom-width: 0;
 }
-#mrxxckytmz .gt_subtitle {
+#lwmaynxqyl .gt_subtitle {
 color: #333333;
 font-size: 85%;
 font-weight: initial;
@@ -3095,7 +3098,7 @@ padding-right: 5px;
 border-top-color: #FFFFFF;
 border-top-width: 0;
 }
-#mrxxckytmz .gt_heading {
+#lwmaynxqyl .gt_heading {
 background-color: #FFFFFF;
 text-align: center;
 border-bottom-color: #FFFFFF;
@@ -3106,12 +3109,12 @@ border-right-style: none;
 border-right-width: 1px;
 border-right-color: #D3D3D3;
 }
-#mrxxckytmz .gt_bottom_border {
+#lwmaynxqyl .gt_bottom_border {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#mrxxckytmz .gt_col_headings {
+#lwmaynxqyl .gt_col_headings {
 border-top-style: solid;
 border-top-width: 2px;
 border-top-color: #D3D3D3;
@@ -3125,7 +3128,7 @@ border-right-style: none;
 border-right-width: 1px;
 border-right-color: #D3D3D3;
 }
-#mrxxckytmz .gt_col_heading {
+#lwmaynxqyl .gt_col_heading {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -3144,7 +3147,7 @@ padding-left: 5px;
 padding-right: 5px;
 overflow-x: hidden;
 }
-#mrxxckytmz .gt_column_spanner_outer {
+#lwmaynxqyl .gt_column_spanner_outer {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -3155,13 +3158,13 @@ padding-bottom: 0;
 padding-left: 4px;
 padding-right: 4px;
 }
-#mrxxckytmz .gt_column_spanner_outer:first-child {
+#lwmaynxqyl .gt_column_spanner_outer:first-child {
 padding-left: 0;
 }
-#mrxxckytmz .gt_column_spanner_outer:last-child {
+#lwmaynxqyl .gt_column_spanner_outer:last-child {
 padding-right: 0;
 }
-#mrxxckytmz .gt_column_spanner {
+#lwmaynxqyl .gt_column_spanner {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
@@ -3172,10 +3175,10 @@ overflow-x: hidden;
 display: inline-block;
 width: 100%;
 }
-#mrxxckytmz .gt_spanner_row {
+#lwmaynxqyl .gt_spanner_row {
 border-bottom-style: hidden;
 }
-#mrxxckytmz .gt_group_heading {
+#lwmaynxqyl .gt_group_heading {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -3200,7 +3203,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 text-align: left;
 }
-#mrxxckytmz .gt_empty_group_heading {
+#lwmaynxqyl .gt_empty_group_heading {
 padding: 0.5px;
 color: #333333;
 background-color: #FFFFFF;
@@ -3214,13 +3217,13 @@ border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 vertical-align: middle;
 }
-#mrxxckytmz .gt_from_md > :first-child {
+#lwmaynxqyl .gt_from_md > :first-child {
 margin-top: 0;
 }
-#mrxxckytmz .gt_from_md > :last-child {
+#lwmaynxqyl .gt_from_md > :last-child {
 margin-bottom: 0;
 }
-#mrxxckytmz .gt_row {
+#lwmaynxqyl .gt_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -3238,7 +3241,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 overflow-x: hidden;
 }
-#mrxxckytmz .gt_stub {
+#lwmaynxqyl .gt_stub {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -3250,7 +3253,7 @@ border-right-color: #D3D3D3;
 padding-left: 5px;
 padding-right: 5px;
 }
-#mrxxckytmz .gt_stub_row_group {
+#lwmaynxqyl .gt_stub_row_group {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -3263,13 +3266,13 @@ padding-left: 5px;
 padding-right: 5px;
 vertical-align: top;
 }
-#mrxxckytmz .gt_row_group_first td {
+#lwmaynxqyl .gt_row_group_first td {
 border-top-width: 2px;
 }
-#mrxxckytmz .gt_row_group_first th {
+#lwmaynxqyl .gt_row_group_first th {
 border-top-width: 2px;
 }
-#mrxxckytmz .gt_summary_row {
+#lwmaynxqyl .gt_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 text-transform: inherit;
@@ -3278,14 +3281,14 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#mrxxckytmz .gt_first_summary_row {
+#lwmaynxqyl .gt_first_summary_row {
 border-top-style: solid;
 border-top-color: #D3D3D3;
 }
-#mrxxckytmz .gt_first_summary_row.thick {
+#lwmaynxqyl .gt_first_summary_row.thick {
 border-top-width: 2px;
 }
-#mrxxckytmz .gt_last_summary_row {
+#lwmaynxqyl .gt_last_summary_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -3294,7 +3297,7 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#mrxxckytmz .gt_grand_summary_row {
+#lwmaynxqyl .gt_grand_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 text-transform: inherit;
@@ -3303,7 +3306,7 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#mrxxckytmz .gt_first_grand_summary_row {
+#lwmaynxqyl .gt_first_grand_summary_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -3312,7 +3315,7 @@ border-top-style: double;
 border-top-width: 6px;
 border-top-color: #D3D3D3;
 }
-#mrxxckytmz .gt_last_grand_summary_row_top {
+#lwmaynxqyl .gt_last_grand_summary_row_top {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -3321,10 +3324,10 @@ border-bottom-style: double;
 border-bottom-width: 6px;
 border-bottom-color: #D3D3D3;
 }
-#mrxxckytmz .gt_striped {
+#lwmaynxqyl .gt_striped {
 background-color: rgba(128, 128, 128, 0.05);
 }
-#mrxxckytmz .gt_table_body {
+#lwmaynxqyl .gt_table_body {
 border-top-style: solid;
 border-top-width: 2px;
 border-top-color: #D3D3D3;
@@ -3332,7 +3335,7 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#mrxxckytmz .gt_footnotes {
+#lwmaynxqyl .gt_footnotes {
 color: #333333;
 background-color: #FFFFFF;
 border-bottom-style: none;
@@ -3345,7 +3348,7 @@ border-right-style: none;
 border-right-width: 2px;
 border-right-color: #D3D3D3;
 }
-#mrxxckytmz .gt_footnote {
+#lwmaynxqyl .gt_footnote {
 margin: 0px;
 font-size: 90%;
 padding-top: 4px;
@@ -3353,7 +3356,7 @@ padding-bottom: 4px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#mrxxckytmz .gt_sourcenotes {
+#lwmaynxqyl .gt_sourcenotes {
 color: #333333;
 background-color: #FFFFFF;
 border-bottom-style: none;
@@ -3366,64 +3369,64 @@ border-right-style: none;
 border-right-width: 2px;
 border-right-color: #D3D3D3;
 }
-#mrxxckytmz .gt_sourcenote {
+#lwmaynxqyl .gt_sourcenote {
 font-size: 90%;
 padding-top: 4px;
 padding-bottom: 4px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#mrxxckytmz .gt_left {
+#lwmaynxqyl .gt_left {
 text-align: left;
 }
-#mrxxckytmz .gt_center {
+#lwmaynxqyl .gt_center {
 text-align: center;
 }
-#mrxxckytmz .gt_right {
+#lwmaynxqyl .gt_right {
 text-align: right;
 font-variant-numeric: tabular-nums;
 }
-#mrxxckytmz .gt_font_normal {
+#lwmaynxqyl .gt_font_normal {
 font-weight: normal;
 }
-#mrxxckytmz .gt_font_bold {
+#lwmaynxqyl .gt_font_bold {
 font-weight: bold;
 }
-#mrxxckytmz .gt_font_italic {
+#lwmaynxqyl .gt_font_italic {
 font-style: italic;
 }
-#mrxxckytmz .gt_super {
+#lwmaynxqyl .gt_super {
 font-size: 65%;
 }
-#mrxxckytmz .gt_footnote_marks {
+#lwmaynxqyl .gt_footnote_marks {
 font-size: 75%;
 vertical-align: 0.4em;
 position: initial;
 }
-#mrxxckytmz .gt_asterisk {
+#lwmaynxqyl .gt_asterisk {
 font-size: 100%;
 vertical-align: 0;
 }
-#mrxxckytmz .gt_indent_1 {
+#lwmaynxqyl .gt_indent_1 {
 text-indent: 5px;
 }
-#mrxxckytmz .gt_indent_2 {
+#lwmaynxqyl .gt_indent_2 {
 text-indent: 10px;
 }
-#mrxxckytmz .gt_indent_3 {
+#lwmaynxqyl .gt_indent_3 {
 text-indent: 15px;
 }
-#mrxxckytmz .gt_indent_4 {
+#lwmaynxqyl .gt_indent_4 {
 text-indent: 20px;
 }
-#mrxxckytmz .gt_indent_5 {
+#lwmaynxqyl .gt_indent_5 {
 text-indent: 25px;
 }
-#mrxxckytmz .katex-display {
+#lwmaynxqyl .katex-display {
 display: inline-flex !important;
 margin-bottom: 0.75em !important;
 }
-#mrxxckytmz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#lwmaynxqyl div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
 height: 0px !important;
 }
 </style>
@@ -3548,7 +3551,7 @@ height: 0px !important;
 </div>
 </div>
 <hr>
-<p><em>Report generated 2026-04-20 12:40 from <code>data.zip</code> (export 2026-04-20).</em></p>
+<p><em>Report generated 2026-04-20 12:45 from <code>data.zip</code> (export 2026-04-20).</em></p>
 <!-- -->
 
 </section>
@@ -4129,7 +4132,7 @@ height: 0px !important;
 <span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a>**Data quality summary:**</span>
 <span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>There is one outstanding data quality concern at this site: three participants (21010, 21029, 21030) attended T4 with complete data but have no T5 record and no visit note explaining why. Their T5 visits were due between July 2025 and February 2026, all before this export. PRI clarification is required to determine whether these represent undocumented withdrawals, losses to follow-up, or administrative gaps. All other data quality indicators are satisfactory: no unjustified missing values, no duplicate records, no date anomalies, and all clinical values within plausible ranges.</span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>There is one outstanding data quality concern at this site: three participants (21010, 21029, 21030) attended T4 with complete data but have no T5 record and no visit note explaining why. Their T5 visits were due between July 2025 and February 2026, all before this export. For the purposes of this report they are treated as having ended at T4, and are therefore **not included in the T5 denominator**; this decision requires confirmation from PRI. All other data quality indicators are satisfactory: no unjustified missing values, no duplicate records, no date anomalies, and all clinical values within plausible ranges.</span>
 <span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a>---</span>
 <span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a></span>
@@ -4357,321 +4360,323 @@ height: 0px !important;
 <span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a>Attendance-based denominators per visit: **T1 = `r sum(!is.na(user_dates$T1Date))`, T2 = `r sum(!is.na(user_dates$T2Date))`, T3 = `r sum(!is.na(user_dates$T3Date))`, T4 = `r sum(!is.na(user_dates$T4Date))`, T5 = `r sum(!is.na(user_dates$T5Date))`**.</span>
 <span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a><span class="in">```{r data-quality}</span></span>
-<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a>data_vars <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
-<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a>  <span class="at">spirometry_fev1Pred      =</span> <span class="st">&quot;Spirometry (FEV1% pred)&quot;</span>,</span>
-<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a>  <span class="at">mmrc_SHTBTH1L            =</span> <span class="st">&quot;mMRC&quot;</span>,</span>
-<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a>  <span class="at">cat_CATSCR1N             =</span> <span class="st">&quot;CAT score&quot;</span>,</span>
-<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a>  <span class="at">exacerbations_mild       =</span> <span class="st">&quot;Exacerbations (mild)&quot;</span>,</span>
-<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a>  <span class="at">exacerbations_moderate   =</span> <span class="st">&quot;Exacerbations (moderate)&quot;</span>,</span>
-<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a>  <span class="at">exacerbations_severe     =</span> <span class="st">&quot;Exacerbations (severe)&quot;</span>,</span>
-<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a>  <span class="at">sixMinWT1_6mwd           =</span> <span class="st">&quot;6-min walk distance&quot;</span>,</span>
-<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a>  <span class="at">ccq_total                =</span> <span class="st">&quot;CCQ total score&quot;</span></span>
-<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a>visit_date_col <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">T1 =</span> <span class="st">&quot;T1Date&quot;</span>, <span class="at">T2 =</span> <span class="st">&quot;T2Date&quot;</span>, <span class="at">T3 =</span> <span class="st">&quot;T3Date&quot;</span>,</span>
-<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a>                    <span class="at">T4 =</span> <span class="st">&quot;T4Date&quot;</span>, <span class="at">T5 =</span> <span class="st">&quot;T5Date&quot;</span>)</span>
-<span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-367"><a href="#cb1-367" aria-hidden="true" tabindex="-1"></a>build_completion_row <span class="ot">&lt;-</span> <span class="cf">function</span>(df, t) {</span>
-<span id="cb1-368"><a href="#cb1-368" aria-hidden="true" tabindex="-1"></a>  date_col <span class="ot">&lt;-</span> visit_date_col[[t]]</span>
-<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a>  completed_df <span class="ot">&lt;-</span> df <span class="sc">|&gt;</span></span>
-<span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(.data[[date_col]]))</span>
-<span id="cb1-371"><a href="#cb1-371" aria-hidden="true" tabindex="-1"></a>  n_att <span class="ot">&lt;-</span> <span class="fu">nrow</span>(completed_df)</span>
-<span id="cb1-372"><a href="#cb1-372" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (n_att <span class="sc">==</span> <span class="dv">0</span>) <span class="fu">return</span>(<span class="fu">tibble</span>())</span>
-<span id="cb1-373"><a href="#cb1-373" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-374"><a href="#cb1-374" aria-hidden="true" tabindex="-1"></a>  has <span class="ot">&lt;-</span> <span class="cf">function</span>(col) col <span class="sc">%in%</span> <span class="fu">colnames</span>(completed_df)</span>
+<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; **Note:** Participants 21010, 21029, and 21030 are not included in the T5 denominator. They attended T4 with complete data but have no T5 record and no visit note explaining the absence. For this report they are treated as having ended at T4 pending confirmation from PRI.</span></span>
+<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a><span class="in">```{r data-quality}</span></span>
+<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a>data_vars <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a>  <span class="at">spirometry_fev1Pred      =</span> <span class="st">&quot;Spirometry (FEV1% pred)&quot;</span>,</span>
+<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a>  <span class="at">mmrc_SHTBTH1L            =</span> <span class="st">&quot;mMRC&quot;</span>,</span>
+<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a>  <span class="at">cat_CATSCR1N             =</span> <span class="st">&quot;CAT score&quot;</span>,</span>
+<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a>  <span class="at">exacerbations_mild       =</span> <span class="st">&quot;Exacerbations (mild)&quot;</span>,</span>
+<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a>  <span class="at">exacerbations_moderate   =</span> <span class="st">&quot;Exacerbations (moderate)&quot;</span>,</span>
+<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a>  <span class="at">exacerbations_severe     =</span> <span class="st">&quot;Exacerbations (severe)&quot;</span>,</span>
+<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a>  <span class="at">sixMinWT1_6mwd           =</span> <span class="st">&quot;6-min walk distance&quot;</span>,</span>
+<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a>  <span class="at">ccq_total                =</span> <span class="st">&quot;CCQ total score&quot;</span></span>
+<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a>visit_date_col <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">T1 =</span> <span class="st">&quot;T1Date&quot;</span>, <span class="at">T2 =</span> <span class="st">&quot;T2Date&quot;</span>, <span class="at">T3 =</span> <span class="st">&quot;T3Date&quot;</span>,</span>
+<span id="cb1-367"><a href="#cb1-367" aria-hidden="true" tabindex="-1"></a>                    <span class="at">T4 =</span> <span class="st">&quot;T4Date&quot;</span>, <span class="at">T5 =</span> <span class="st">&quot;T5Date&quot;</span>)</span>
+<span id="cb1-368"><a href="#cb1-368" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a>build_completion_row <span class="ot">&lt;-</span> <span class="cf">function</span>(df, t) {</span>
+<span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a>  date_col <span class="ot">&lt;-</span> visit_date_col[[t]]</span>
+<span id="cb1-371"><a href="#cb1-371" aria-hidden="true" tabindex="-1"></a>  completed_df <span class="ot">&lt;-</span> df <span class="sc">|&gt;</span></span>
+<span id="cb1-372"><a href="#cb1-372" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(.data[[date_col]]))</span>
+<span id="cb1-373"><a href="#cb1-373" aria-hidden="true" tabindex="-1"></a>  n_att <span class="ot">&lt;-</span> <span class="fu">nrow</span>(completed_df)</span>
+<span id="cb1-374"><a href="#cb1-374" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (n_att <span class="sc">==</span> <span class="dv">0</span>) <span class="fu">return</span>(<span class="fu">tibble</span>())</span>
 <span id="cb1-375"><a href="#cb1-375" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-376"><a href="#cb1-376" aria-hidden="true" tabindex="-1"></a>  ccq_items <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;ccq_breath&quot;</span>,<span class="st">&quot;ccq_physical&quot;</span>,<span class="st">&quot;ccq_cold&quot;</span>,<span class="st">&quot;ccq_depressed&quot;</span>,</span>
-<span id="cb1-377"><a href="#cb1-377" aria-hidden="true" tabindex="-1"></a>                 <span class="st">&quot;ccq_cough&quot;</span>,<span class="st">&quot;ccq_phlegm&quot;</span>,<span class="st">&quot;ccq_strenouspa&quot;</span>,<span class="st">&quot;ccq_moderatepa&quot;</span>,</span>
-<span id="cb1-378"><a href="#cb1-378" aria-hidden="true" tabindex="-1"></a>                 <span class="st">&quot;ccq_daily&quot;</span>,<span class="st">&quot;ccq_social&quot;</span>)</span>
-<span id="cb1-379"><a href="#cb1-379" aria-hidden="true" tabindex="-1"></a>  ccq_ok <span class="ot">&lt;-</span> <span class="fu">all</span>(ccq_items <span class="sc">%in%</span> <span class="fu">colnames</span>(completed_df))</span>
-<span id="cb1-380"><a href="#cb1-380" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (ccq_ok) {</span>
-<span id="cb1-381"><a href="#cb1-381" aria-hidden="true" tabindex="-1"></a>    completed_df <span class="ot">&lt;-</span> completed_df <span class="sc">|&gt;</span></span>
-<span id="cb1-382"><a href="#cb1-382" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mutate</span>(<span class="at">ccq_total =</span> <span class="fu">rowMeans</span>(<span class="fu">across</span>(<span class="fu">all_of</span>(ccq_items), as.numeric), <span class="at">na.rm =</span> <span class="cn">FALSE</span>))</span>
-<span id="cb1-383"><a href="#cb1-383" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-384"><a href="#cb1-384" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-385"><a href="#cb1-385" aria-hidden="true" tabindex="-1"></a>  results <span class="ot">&lt;-</span> purrr<span class="sc">::</span><span class="fu">imap_dfr</span>(data_vars, <span class="cf">function</span>(label, var) {</span>
-<span id="cb1-386"><a href="#cb1-386" aria-hidden="true" tabindex="-1"></a>    expected <span class="ot">&lt;-</span> <span class="cf">if</span> (var <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;spirometry_fev1Pred&quot;</span>, <span class="st">&quot;sixMinWT1_6mwd&quot;</span>)) {</span>
-<span id="cb1-387"><a href="#cb1-387" aria-hidden="true" tabindex="-1"></a>      t <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;T1&quot;</span>, <span class="st">&quot;T3&quot;</span>, <span class="st">&quot;T5&quot;</span>)</span>
-<span id="cb1-388"><a href="#cb1-388" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
-<span id="cb1-389"><a href="#cb1-389" aria-hidden="true" tabindex="-1"></a>      <span class="cn">TRUE</span></span>
-<span id="cb1-390"><a href="#cb1-390" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb1-391"><a href="#cb1-391" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span>expected) <span class="fu">return</span>(<span class="fu">tibble</span>())</span>
-<span id="cb1-392"><a href="#cb1-392" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="fu">has</span>(var)) <span class="fu">return</span>(<span class="fu">tibble</span>())</span>
-<span id="cb1-393"><a href="#cb1-393" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-394"><a href="#cb1-394" aria-hidden="true" tabindex="-1"></a>    is_present <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb1-395"><a href="#cb1-395" aria-hidden="true" tabindex="-1"></a>      xt <span class="ot">&lt;-</span> <span class="fu">trimws</span>(<span class="fu">as.character</span>(x))</span>
-<span id="cb1-396"><a href="#cb1-396" aria-hidden="true" tabindex="-1"></a>      <span class="sc">!</span>(<span class="fu">is.na</span>(xt) <span class="sc">|</span> <span class="sc">!</span><span class="fu">nzchar</span>(xt) <span class="sc">|</span> <span class="fu">tolower</span>(xt) <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;na&quot;</span>,<span class="st">&quot;&lt;na&gt;&quot;</span>)) <span class="sc">&amp;</span> <span class="fu">grepl</span>(<span class="st">&quot;[0-9]&quot;</span>, xt)</span>
-<span id="cb1-397"><a href="#cb1-397" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb1-398"><a href="#cb1-398" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (var <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;exacerbations_mild&quot;</span>,<span class="st">&quot;exacerbations_moderate&quot;</span>,<span class="st">&quot;exacerbations_severe&quot;</span>)) {</span>
-<span id="cb1-399"><a href="#cb1-399" aria-hidden="true" tabindex="-1"></a>      present <span class="ot">&lt;-</span> <span class="fu">vapply</span>(completed_df[[var]], is_present, <span class="fu">logical</span>(<span class="dv">1</span>))</span>
-<span id="cb1-400"><a href="#cb1-400" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
-<span id="cb1-401"><a href="#cb1-401" aria-hidden="true" tabindex="-1"></a>      present <span class="ot">&lt;-</span> <span class="sc">!</span><span class="fu">is.na</span>(<span class="fu">suppressWarnings</span>(<span class="fu">as.numeric</span>(completed_df[[var]])))</span>
-<span id="cb1-402"><a href="#cb1-402" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb1-403"><a href="#cb1-403" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tibble</span>(<span class="at">Visit =</span> t, <span class="at">Variable =</span> label,</span>
-<span id="cb1-404"><a href="#cb1-404" aria-hidden="true" tabindex="-1"></a>           <span class="at">Expected =</span> n_att,</span>
-<span id="cb1-405"><a href="#cb1-405" aria-hidden="true" tabindex="-1"></a>           <span class="at">Completed =</span> <span class="fu">sum</span>(present),</span>
-<span id="cb1-406"><a href="#cb1-406" aria-hidden="true" tabindex="-1"></a>           <span class="at">Rate =</span> <span class="fu">sum</span>(present) <span class="sc">/</span> n_att <span class="sc">*</span> <span class="dv">100</span>)</span>
-<span id="cb1-407"><a href="#cb1-407" aria-hidden="true" tabindex="-1"></a>  })</span>
-<span id="cb1-408"><a href="#cb1-408" aria-hidden="true" tabindex="-1"></a>  results</span>
-<span id="cb1-409"><a href="#cb1-409" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-410"><a href="#cb1-410" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-411"><a href="#cb1-411" aria-hidden="true" tabindex="-1"></a>completion_long <span class="ot">&lt;-</span> purrr<span class="sc">::</span><span class="fu">imap_dfr</span>(visits, build_completion_row)</span>
+<span id="cb1-376"><a href="#cb1-376" aria-hidden="true" tabindex="-1"></a>  has <span class="ot">&lt;-</span> <span class="cf">function</span>(col) col <span class="sc">%in%</span> <span class="fu">colnames</span>(completed_df)</span>
+<span id="cb1-377"><a href="#cb1-377" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-378"><a href="#cb1-378" aria-hidden="true" tabindex="-1"></a>  ccq_items <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;ccq_breath&quot;</span>,<span class="st">&quot;ccq_physical&quot;</span>,<span class="st">&quot;ccq_cold&quot;</span>,<span class="st">&quot;ccq_depressed&quot;</span>,</span>
+<span id="cb1-379"><a href="#cb1-379" aria-hidden="true" tabindex="-1"></a>                 <span class="st">&quot;ccq_cough&quot;</span>,<span class="st">&quot;ccq_phlegm&quot;</span>,<span class="st">&quot;ccq_strenouspa&quot;</span>,<span class="st">&quot;ccq_moderatepa&quot;</span>,</span>
+<span id="cb1-380"><a href="#cb1-380" aria-hidden="true" tabindex="-1"></a>                 <span class="st">&quot;ccq_daily&quot;</span>,<span class="st">&quot;ccq_social&quot;</span>)</span>
+<span id="cb1-381"><a href="#cb1-381" aria-hidden="true" tabindex="-1"></a>  ccq_ok <span class="ot">&lt;-</span> <span class="fu">all</span>(ccq_items <span class="sc">%in%</span> <span class="fu">colnames</span>(completed_df))</span>
+<span id="cb1-382"><a href="#cb1-382" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (ccq_ok) {</span>
+<span id="cb1-383"><a href="#cb1-383" aria-hidden="true" tabindex="-1"></a>    completed_df <span class="ot">&lt;-</span> completed_df <span class="sc">|&gt;</span></span>
+<span id="cb1-384"><a href="#cb1-384" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mutate</span>(<span class="at">ccq_total =</span> <span class="fu">rowMeans</span>(<span class="fu">across</span>(<span class="fu">all_of</span>(ccq_items), as.numeric), <span class="at">na.rm =</span> <span class="cn">FALSE</span>))</span>
+<span id="cb1-385"><a href="#cb1-385" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-386"><a href="#cb1-386" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-387"><a href="#cb1-387" aria-hidden="true" tabindex="-1"></a>  results <span class="ot">&lt;-</span> purrr<span class="sc">::</span><span class="fu">imap_dfr</span>(data_vars, <span class="cf">function</span>(label, var) {</span>
+<span id="cb1-388"><a href="#cb1-388" aria-hidden="true" tabindex="-1"></a>    expected <span class="ot">&lt;-</span> <span class="cf">if</span> (var <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;spirometry_fev1Pred&quot;</span>, <span class="st">&quot;sixMinWT1_6mwd&quot;</span>)) {</span>
+<span id="cb1-389"><a href="#cb1-389" aria-hidden="true" tabindex="-1"></a>      t <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;T1&quot;</span>, <span class="st">&quot;T3&quot;</span>, <span class="st">&quot;T5&quot;</span>)</span>
+<span id="cb1-390"><a href="#cb1-390" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb1-391"><a href="#cb1-391" aria-hidden="true" tabindex="-1"></a>      <span class="cn">TRUE</span></span>
+<span id="cb1-392"><a href="#cb1-392" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-393"><a href="#cb1-393" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span>expected) <span class="fu">return</span>(<span class="fu">tibble</span>())</span>
+<span id="cb1-394"><a href="#cb1-394" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="fu">has</span>(var)) <span class="fu">return</span>(<span class="fu">tibble</span>())</span>
+<span id="cb1-395"><a href="#cb1-395" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-396"><a href="#cb1-396" aria-hidden="true" tabindex="-1"></a>    is_present <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb1-397"><a href="#cb1-397" aria-hidden="true" tabindex="-1"></a>      xt <span class="ot">&lt;-</span> <span class="fu">trimws</span>(<span class="fu">as.character</span>(x))</span>
+<span id="cb1-398"><a href="#cb1-398" aria-hidden="true" tabindex="-1"></a>      <span class="sc">!</span>(<span class="fu">is.na</span>(xt) <span class="sc">|</span> <span class="sc">!</span><span class="fu">nzchar</span>(xt) <span class="sc">|</span> <span class="fu">tolower</span>(xt) <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;na&quot;</span>,<span class="st">&quot;&lt;na&gt;&quot;</span>)) <span class="sc">&amp;</span> <span class="fu">grepl</span>(<span class="st">&quot;[0-9]&quot;</span>, xt)</span>
+<span id="cb1-399"><a href="#cb1-399" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-400"><a href="#cb1-400" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (var <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;exacerbations_mild&quot;</span>,<span class="st">&quot;exacerbations_moderate&quot;</span>,<span class="st">&quot;exacerbations_severe&quot;</span>)) {</span>
+<span id="cb1-401"><a href="#cb1-401" aria-hidden="true" tabindex="-1"></a>      present <span class="ot">&lt;-</span> <span class="fu">vapply</span>(completed_df[[var]], is_present, <span class="fu">logical</span>(<span class="dv">1</span>))</span>
+<span id="cb1-402"><a href="#cb1-402" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb1-403"><a href="#cb1-403" aria-hidden="true" tabindex="-1"></a>      present <span class="ot">&lt;-</span> <span class="sc">!</span><span class="fu">is.na</span>(<span class="fu">suppressWarnings</span>(<span class="fu">as.numeric</span>(completed_df[[var]])))</span>
+<span id="cb1-404"><a href="#cb1-404" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-405"><a href="#cb1-405" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tibble</span>(<span class="at">Visit =</span> t, <span class="at">Variable =</span> label,</span>
+<span id="cb1-406"><a href="#cb1-406" aria-hidden="true" tabindex="-1"></a>           <span class="at">Expected =</span> n_att,</span>
+<span id="cb1-407"><a href="#cb1-407" aria-hidden="true" tabindex="-1"></a>           <span class="at">Completed =</span> <span class="fu">sum</span>(present),</span>
+<span id="cb1-408"><a href="#cb1-408" aria-hidden="true" tabindex="-1"></a>           <span class="at">Rate =</span> <span class="fu">sum</span>(present) <span class="sc">/</span> n_att <span class="sc">*</span> <span class="dv">100</span>)</span>
+<span id="cb1-409"><a href="#cb1-409" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb1-410"><a href="#cb1-410" aria-hidden="true" tabindex="-1"></a>  results</span>
+<span id="cb1-411"><a href="#cb1-411" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb1-412"><a href="#cb1-412" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-413"><a href="#cb1-413" aria-hidden="true" tabindex="-1"></a>completion_long <span class="ot">&lt;-</span> completion_long <span class="sc">|&gt;</span></span>
-<span id="cb1-414"><a href="#cb1-414" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Visit =</span> <span class="fu">factor</span>(Visit, <span class="at">levels =</span> <span class="fu">paste0</span>(<span class="st">&quot;T&quot;</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>)),</span>
-<span id="cb1-415"><a href="#cb1-415" aria-hidden="true" tabindex="-1"></a>         <span class="at">Variable =</span> <span class="fu">factor</span>(Variable, <span class="at">levels =</span> <span class="fu">rev</span>(<span class="fu">unname</span>(data_vars))))</span>
-<span id="cb1-416"><a href="#cb1-416" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-417"><a href="#cb1-417" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-418"><a href="#cb1-418" aria-hidden="true" tabindex="-1"></a><span class="fu">## Heatmap</span></span>
+<span id="cb1-413"><a href="#cb1-413" aria-hidden="true" tabindex="-1"></a>completion_long <span class="ot">&lt;-</span> purrr<span class="sc">::</span><span class="fu">imap_dfr</span>(visits, build_completion_row)</span>
+<span id="cb1-414"><a href="#cb1-414" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-415"><a href="#cb1-415" aria-hidden="true" tabindex="-1"></a>completion_long <span class="ot">&lt;-</span> completion_long <span class="sc">|&gt;</span></span>
+<span id="cb1-416"><a href="#cb1-416" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Visit =</span> <span class="fu">factor</span>(Visit, <span class="at">levels =</span> <span class="fu">paste0</span>(<span class="st">&quot;T&quot;</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>)),</span>
+<span id="cb1-417"><a href="#cb1-417" aria-hidden="true" tabindex="-1"></a>         <span class="at">Variable =</span> <span class="fu">factor</span>(Variable, <span class="at">levels =</span> <span class="fu">rev</span>(<span class="fu">unname</span>(data_vars))))</span>
+<span id="cb1-418"><a href="#cb1-418" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb1-419"><a href="#cb1-419" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-420"><a href="#cb1-420" aria-hidden="true" tabindex="-1"></a>The 6-Minute Walk Test (6MWD) is the variable with the lowest completion, particularly at T3 (78%), where it accounts for the majority of missing cells. Spirometry completion is notably strong — 100% at T1 and T5, and 90% at T3. Questionnaire-based outcomes (mMRC, CAT, CCQ, exacerbations) are generally complete across all visits. The selective nature of missingness — concentrated in the 6MWT — points to clinical contraindications rather than general data collection failures.</span>
+<span id="cb1-420"><a href="#cb1-420" aria-hidden="true" tabindex="-1"></a><span class="fu">## Heatmap</span></span>
 <span id="cb1-421"><a href="#cb1-421" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-422"><a href="#cb1-422" aria-hidden="true" tabindex="-1"></a><span class="in">```{r heatmap, fig.height=5}</span></span>
-<span id="cb1-423"><a href="#cb1-423" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(completion_long, <span class="fu">aes</span>(<span class="at">x =</span> Visit, <span class="at">y =</span> Variable, <span class="at">fill =</span> Rate)) <span class="sc">+</span></span>
-<span id="cb1-424"><a href="#cb1-424" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_tile</span>(<span class="at">color =</span> <span class="st">&quot;white&quot;</span>, <span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
-<span id="cb1-425"><a href="#cb1-425" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">sprintf</span>(<span class="st">&quot;%.0f%%</span><span class="sc">\n</span><span class="st">(%d/%d)&quot;</span>, Rate, Completed, Expected)),</span>
-<span id="cb1-426"><a href="#cb1-426" aria-hidden="true" tabindex="-1"></a>            <span class="at">color =</span> <span class="st">&quot;white&quot;</span>, <span class="at">fontface =</span> <span class="st">&quot;bold&quot;</span>, <span class="at">size =</span> <span class="fl">3.2</span>) <span class="sc">+</span></span>
-<span id="cb1-427"><a href="#cb1-427" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_gradient2</span>(<span class="at">low =</span> <span class="st">&quot;#d73027&quot;</span>, <span class="at">mid =</span> <span class="st">&quot;#fee08b&quot;</span>, <span class="at">high =</span> <span class="st">&quot;#1a9850&quot;</span>,</span>
-<span id="cb1-428"><a href="#cb1-428" aria-hidden="true" tabindex="-1"></a>                       <span class="at">midpoint =</span> <span class="dv">90</span>, <span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">40</span>, <span class="dv">100</span>),</span>
-<span id="cb1-429"><a href="#cb1-429" aria-hidden="true" tabindex="-1"></a>                       <span class="at">name =</span> <span class="st">&quot;Completion</span><span class="sc">\n</span><span class="st">(%)&quot;</span>,</span>
-<span id="cb1-430"><a href="#cb1-430" aria-hidden="true" tabindex="-1"></a>                       <span class="at">oob =</span> scales<span class="sc">::</span>squish) <span class="sc">+</span></span>
-<span id="cb1-431"><a href="#cb1-431" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Variable-level data completion at PRI (Germany), by visit&quot;</span>,</span>
-<span id="cb1-432"><a href="#cb1-432" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Visit&quot;</span>, <span class="at">y =</span> <span class="cn">NULL</span>) <span class="sc">+</span></span>
-<span id="cb1-433"><a href="#cb1-433" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">12</span>) <span class="sc">+</span></span>
-<span id="cb1-434"><a href="#cb1-434" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">11</span>),</span>
-<span id="cb1-435"><a href="#cb1-435" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid =</span> <span class="fu">element_blank</span>())</span>
-<span id="cb1-436"><a href="#cb1-436" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-437"><a href="#cb1-437" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-438"><a href="#cb1-438" aria-hidden="true" tabindex="-1"></a><span class="fu">## Attribution of missing values by reason</span></span>
+<span id="cb1-422"><a href="#cb1-422" aria-hidden="true" tabindex="-1"></a>The 6-Minute Walk Test (6MWD) is the variable with the lowest completion, particularly at T3 (78%), where it accounts for the majority of missing cells. Spirometry completion is notably strong — 100% at T1 and T5, and 90% at T3. Questionnaire-based outcomes (mMRC, CAT, CCQ, exacerbations) are generally complete across all visits. The selective nature of missingness — concentrated in the 6MWT — points to clinical contraindications rather than general data collection failures.</span>
+<span id="cb1-423"><a href="#cb1-423" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-424"><a href="#cb1-424" aria-hidden="true" tabindex="-1"></a><span class="in">```{r heatmap, fig.height=5}</span></span>
+<span id="cb1-425"><a href="#cb1-425" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(completion_long, <span class="fu">aes</span>(<span class="at">x =</span> Visit, <span class="at">y =</span> Variable, <span class="at">fill =</span> Rate)) <span class="sc">+</span></span>
+<span id="cb1-426"><a href="#cb1-426" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_tile</span>(<span class="at">color =</span> <span class="st">&quot;white&quot;</span>, <span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb1-427"><a href="#cb1-427" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">sprintf</span>(<span class="st">&quot;%.0f%%</span><span class="sc">\n</span><span class="st">(%d/%d)&quot;</span>, Rate, Completed, Expected)),</span>
+<span id="cb1-428"><a href="#cb1-428" aria-hidden="true" tabindex="-1"></a>            <span class="at">color =</span> <span class="st">&quot;white&quot;</span>, <span class="at">fontface =</span> <span class="st">&quot;bold&quot;</span>, <span class="at">size =</span> <span class="fl">3.2</span>) <span class="sc">+</span></span>
+<span id="cb1-429"><a href="#cb1-429" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_gradient2</span>(<span class="at">low =</span> <span class="st">&quot;#d73027&quot;</span>, <span class="at">mid =</span> <span class="st">&quot;#fee08b&quot;</span>, <span class="at">high =</span> <span class="st">&quot;#1a9850&quot;</span>,</span>
+<span id="cb1-430"><a href="#cb1-430" aria-hidden="true" tabindex="-1"></a>                       <span class="at">midpoint =</span> <span class="dv">90</span>, <span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">40</span>, <span class="dv">100</span>),</span>
+<span id="cb1-431"><a href="#cb1-431" aria-hidden="true" tabindex="-1"></a>                       <span class="at">name =</span> <span class="st">&quot;Completion</span><span class="sc">\n</span><span class="st">(%)&quot;</span>,</span>
+<span id="cb1-432"><a href="#cb1-432" aria-hidden="true" tabindex="-1"></a>                       <span class="at">oob =</span> scales<span class="sc">::</span>squish) <span class="sc">+</span></span>
+<span id="cb1-433"><a href="#cb1-433" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Variable-level data completion at PRI (Germany), by visit&quot;</span>,</span>
+<span id="cb1-434"><a href="#cb1-434" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Visit&quot;</span>, <span class="at">y =</span> <span class="cn">NULL</span>) <span class="sc">+</span></span>
+<span id="cb1-435"><a href="#cb1-435" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">12</span>) <span class="sc">+</span></span>
+<span id="cb1-436"><a href="#cb1-436" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">11</span>),</span>
+<span id="cb1-437"><a href="#cb1-437" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid =</span> <span class="fu">element_blank</span>())</span>
+<span id="cb1-438"><a href="#cb1-438" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb1-439"><a href="#cb1-439" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-440"><a href="#cb1-440" aria-hidden="true" tabindex="-1"></a>Critically, every missing cell in the heatmap has a documented reason in the eCRF: 34 are attributable to clinical events and 3 to site logistics. There are no unexplained missing values at this site. This indicates that PRI consistently recorded the reasons for measurement omissions, and that missing data reflects genuine clinical or operational constraints rather than data collection failures.</span>
+<span id="cb1-440"><a href="#cb1-440" aria-hidden="true" tabindex="-1"></a><span class="fu">## Attribution of missing values by reason</span></span>
 <span id="cb1-441"><a href="#cb1-441" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-442"><a href="#cb1-442" aria-hidden="true" tabindex="-1"></a><span class="in">```{r missingness-classification}</span></span>
-<span id="cb1-443"><a href="#cb1-443" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="fu">file.path</span>(<span class="st">&quot;R&quot;</span>, <span class="st">&quot;classify_missingness.R&quot;</span>))</span>
-<span id="cb1-444"><a href="#cb1-444" aria-hidden="true" tabindex="-1"></a>miss_out <span class="ot">&lt;-</span> <span class="fu">build_missingness_table</span>(visits,</span>
-<span id="cb1-445"><a href="#cb1-445" aria-hidden="true" tabindex="-1"></a>                                    <span class="at">formal_withdrawn_ids =</span> withdrawn_ids)</span>
-<span id="cb1-446"><a href="#cb1-446" aria-hidden="true" tabindex="-1"></a>miss_cells  <span class="ot">&lt;-</span> miss_out<span class="sc">$</span>cells</span>
-<span id="cb1-447"><a href="#cb1-447" aria-hidden="true" tabindex="-1"></a>miss_combos <span class="ot">&lt;-</span> miss_out<span class="sc">$</span>combos</span>
-<span id="cb1-448"><a href="#cb1-448" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-449"><a href="#cb1-449" aria-hidden="true" tabindex="-1"></a>reason_order <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
-<span id="cb1-450"><a href="#cb1-450" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Clinical event (exacerbation / hospital / surgery)&quot;</span>,</span>
-<span id="cb1-451"><a href="#cb1-451" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Informal withdrawal (retired)&quot;</span>,</span>
-<span id="cb1-452"><a href="#cb1-452" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Summer vacation gap&quot;</span>,</span>
-<span id="cb1-453"><a href="#cb1-453" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Not reachable / lost to follow-up&quot;</span>,</span>
-<span id="cb1-454"><a href="#cb1-454" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Participant declined or canceled assessment&quot;</span>,</span>
-<span id="cb1-455"><a href="#cb1-455" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Site logistics&quot;</span>,</span>
-<span id="cb1-456"><a href="#cb1-456" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Scheduling / personal (non-clinical)&quot;</span>,</span>
-<span id="cb1-457"><a href="#cb1-457" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Missingness without any justification&quot;</span></span>
-<span id="cb1-458"><a href="#cb1-458" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-459"><a href="#cb1-459" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-460"><a href="#cb1-460" aria-hidden="true" tabindex="-1"></a>reason_summary <span class="ot">&lt;-</span> miss_cells <span class="sc">|&gt;</span></span>
-<span id="cb1-461"><a href="#cb1-461" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(reason, <span class="at">name =</span> <span class="st">&quot;missing_cells&quot;</span>) <span class="sc">|&gt;</span></span>
-<span id="cb1-462"><a href="#cb1-462" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(miss_combos <span class="sc">|&gt;</span> <span class="fu">count</span>(reason, <span class="at">name =</span> <span class="st">&quot;id_visit_combos&quot;</span>),</span>
-<span id="cb1-463"><a href="#cb1-463" aria-hidden="true" tabindex="-1"></a>            <span class="at">by =</span> <span class="st">&quot;reason&quot;</span>) <span class="sc">|&gt;</span></span>
-<span id="cb1-464"><a href="#cb1-464" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">share =</span> missing_cells <span class="sc">/</span> <span class="fu">sum</span>(missing_cells),</span>
-<span id="cb1-465"><a href="#cb1-465" aria-hidden="true" tabindex="-1"></a>         <span class="at">reason =</span> <span class="fu">factor</span>(reason, <span class="at">levels =</span> reason_order)) <span class="sc">|&gt;</span></span>
-<span id="cb1-466"><a href="#cb1-466" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(reason) <span class="sc">|&gt;</span></span>
-<span id="cb1-467"><a href="#cb1-467" aria-hidden="true" tabindex="-1"></a>  <span class="fu">transmute</span>(<span class="at">Reason =</span> <span class="fu">as.character</span>(reason),</span>
-<span id="cb1-468"><a href="#cb1-468" aria-hidden="true" tabindex="-1"></a>            <span class="st">`</span><span class="at">Missing cells</span><span class="st">`</span> <span class="ot">=</span> missing_cells,</span>
-<span id="cb1-469"><a href="#cb1-469" aria-hidden="true" tabindex="-1"></a>            <span class="st">`</span><span class="at">ID × visit combos</span><span class="st">`</span> <span class="ot">=</span> id_visit_combos,</span>
-<span id="cb1-470"><a href="#cb1-470" aria-hidden="true" tabindex="-1"></a>            <span class="st">`</span><span class="at">% of all missing</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">percent</span>(share, <span class="at">accuracy =</span> <span class="fl">0.1</span>))</span>
-<span id="cb1-471"><a href="#cb1-471" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-472"><a href="#cb1-472" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(reason_summary,</span>
-<span id="cb1-473"><a href="#cb1-473" aria-hidden="true" tabindex="-1"></a>      <span class="at">caption =</span> <span class="fu">paste0</span>(<span class="st">&quot;Attribution of the &quot;</span>, <span class="fu">nrow</span>(miss_cells),</span>
-<span id="cb1-474"><a href="#cb1-474" aria-hidden="true" tabindex="-1"></a>                       <span class="st">&quot; missing heatmap cells (out of &quot;</span>,</span>
-<span id="cb1-475"><a href="#cb1-475" aria-hidden="true" tabindex="-1"></a>                       <span class="fu">sum</span>(<span class="sc">!</span><span class="fu">is.na</span>(user_dates<span class="sc">$</span>T1Date)) <span class="sc">*</span> <span class="dv">8</span> <span class="sc">+</span></span>
-<span id="cb1-476"><a href="#cb1-476" aria-hidden="true" tabindex="-1"></a>                       <span class="fu">sum</span>(<span class="sc">!</span><span class="fu">is.na</span>(user_dates<span class="sc">$</span>T2Date)) <span class="sc">*</span> <span class="dv">6</span> <span class="sc">+</span></span>
-<span id="cb1-477"><a href="#cb1-477" aria-hidden="true" tabindex="-1"></a>                       <span class="fu">sum</span>(<span class="sc">!</span><span class="fu">is.na</span>(user_dates<span class="sc">$</span>T3Date)) <span class="sc">*</span> <span class="dv">8</span> <span class="sc">+</span></span>
-<span id="cb1-478"><a href="#cb1-478" aria-hidden="true" tabindex="-1"></a>                       <span class="fu">sum</span>(<span class="sc">!</span><span class="fu">is.na</span>(user_dates<span class="sc">$</span>T4Date)) <span class="sc">*</span> <span class="dv">6</span> <span class="sc">+</span></span>
-<span id="cb1-479"><a href="#cb1-479" aria-hidden="true" tabindex="-1"></a>                       <span class="fu">sum</span>(<span class="sc">!</span><span class="fu">is.na</span>(user_dates<span class="sc">$</span>T5Date)) <span class="sc">*</span> <span class="dv">8</span>,</span>
-<span id="cb1-480"><a href="#cb1-480" aria-hidden="true" tabindex="-1"></a>                       <span class="st">&quot; expected cells).&quot;</span>))</span>
-<span id="cb1-481"><a href="#cb1-481" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-482"><a href="#cb1-482" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-483"><a href="#cb1-483" aria-hidden="true" tabindex="-1"></a>Missing data is heavily concentrated at T3 (31 of 37 cells), which is also the visit with the highest attendance among assessment visits. This is not contradictory: T3 is the point at which many participants with progressive disease had deteriorated enough to make the 6MWT unsafe or impractical, while still attending the visit itself. The 4 missing cells at T1 reflect early-visit contraindications (blood pressure, dyspnoea) that prevented 6MWT from being performed at the very first assessment.</span>
+<span id="cb1-442"><a href="#cb1-442" aria-hidden="true" tabindex="-1"></a>Critically, every missing cell in the heatmap has a documented reason in the eCRF: 34 are attributable to clinical events and 3 to site logistics. There are no unexplained missing values at this site. This indicates that PRI consistently recorded the reasons for measurement omissions, and that missing data reflects genuine clinical or operational constraints rather than data collection failures.</span>
+<span id="cb1-443"><a href="#cb1-443" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-444"><a href="#cb1-444" aria-hidden="true" tabindex="-1"></a><span class="in">```{r missingness-classification}</span></span>
+<span id="cb1-445"><a href="#cb1-445" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="fu">file.path</span>(<span class="st">&quot;R&quot;</span>, <span class="st">&quot;classify_missingness.R&quot;</span>))</span>
+<span id="cb1-446"><a href="#cb1-446" aria-hidden="true" tabindex="-1"></a>miss_out <span class="ot">&lt;-</span> <span class="fu">build_missingness_table</span>(visits,</span>
+<span id="cb1-447"><a href="#cb1-447" aria-hidden="true" tabindex="-1"></a>                                    <span class="at">formal_withdrawn_ids =</span> withdrawn_ids)</span>
+<span id="cb1-448"><a href="#cb1-448" aria-hidden="true" tabindex="-1"></a>miss_cells  <span class="ot">&lt;-</span> miss_out<span class="sc">$</span>cells</span>
+<span id="cb1-449"><a href="#cb1-449" aria-hidden="true" tabindex="-1"></a>miss_combos <span class="ot">&lt;-</span> miss_out<span class="sc">$</span>combos</span>
+<span id="cb1-450"><a href="#cb1-450" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-451"><a href="#cb1-451" aria-hidden="true" tabindex="-1"></a>reason_order <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb1-452"><a href="#cb1-452" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Clinical event (exacerbation / hospital / surgery)&quot;</span>,</span>
+<span id="cb1-453"><a href="#cb1-453" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Informal withdrawal (retired)&quot;</span>,</span>
+<span id="cb1-454"><a href="#cb1-454" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Summer vacation gap&quot;</span>,</span>
+<span id="cb1-455"><a href="#cb1-455" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Not reachable / lost to follow-up&quot;</span>,</span>
+<span id="cb1-456"><a href="#cb1-456" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Participant declined or canceled assessment&quot;</span>,</span>
+<span id="cb1-457"><a href="#cb1-457" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Site logistics&quot;</span>,</span>
+<span id="cb1-458"><a href="#cb1-458" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Scheduling / personal (non-clinical)&quot;</span>,</span>
+<span id="cb1-459"><a href="#cb1-459" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Missingness without any justification&quot;</span></span>
+<span id="cb1-460"><a href="#cb1-460" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-461"><a href="#cb1-461" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-462"><a href="#cb1-462" aria-hidden="true" tabindex="-1"></a>reason_summary <span class="ot">&lt;-</span> miss_cells <span class="sc">|&gt;</span></span>
+<span id="cb1-463"><a href="#cb1-463" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(reason, <span class="at">name =</span> <span class="st">&quot;missing_cells&quot;</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-464"><a href="#cb1-464" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(miss_combos <span class="sc">|&gt;</span> <span class="fu">count</span>(reason, <span class="at">name =</span> <span class="st">&quot;id_visit_combos&quot;</span>),</span>
+<span id="cb1-465"><a href="#cb1-465" aria-hidden="true" tabindex="-1"></a>            <span class="at">by =</span> <span class="st">&quot;reason&quot;</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-466"><a href="#cb1-466" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">share =</span> missing_cells <span class="sc">/</span> <span class="fu">sum</span>(missing_cells),</span>
+<span id="cb1-467"><a href="#cb1-467" aria-hidden="true" tabindex="-1"></a>         <span class="at">reason =</span> <span class="fu">factor</span>(reason, <span class="at">levels =</span> reason_order)) <span class="sc">|&gt;</span></span>
+<span id="cb1-468"><a href="#cb1-468" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(reason) <span class="sc">|&gt;</span></span>
+<span id="cb1-469"><a href="#cb1-469" aria-hidden="true" tabindex="-1"></a>  <span class="fu">transmute</span>(<span class="at">Reason =</span> <span class="fu">as.character</span>(reason),</span>
+<span id="cb1-470"><a href="#cb1-470" aria-hidden="true" tabindex="-1"></a>            <span class="st">`</span><span class="at">Missing cells</span><span class="st">`</span> <span class="ot">=</span> missing_cells,</span>
+<span id="cb1-471"><a href="#cb1-471" aria-hidden="true" tabindex="-1"></a>            <span class="st">`</span><span class="at">ID × visit combos</span><span class="st">`</span> <span class="ot">=</span> id_visit_combos,</span>
+<span id="cb1-472"><a href="#cb1-472" aria-hidden="true" tabindex="-1"></a>            <span class="st">`</span><span class="at">% of all missing</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">percent</span>(share, <span class="at">accuracy =</span> <span class="fl">0.1</span>))</span>
+<span id="cb1-473"><a href="#cb1-473" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-474"><a href="#cb1-474" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(reason_summary,</span>
+<span id="cb1-475"><a href="#cb1-475" aria-hidden="true" tabindex="-1"></a>      <span class="at">caption =</span> <span class="fu">paste0</span>(<span class="st">&quot;Attribution of the &quot;</span>, <span class="fu">nrow</span>(miss_cells),</span>
+<span id="cb1-476"><a href="#cb1-476" aria-hidden="true" tabindex="-1"></a>                       <span class="st">&quot; missing heatmap cells (out of &quot;</span>,</span>
+<span id="cb1-477"><a href="#cb1-477" aria-hidden="true" tabindex="-1"></a>                       <span class="fu">sum</span>(<span class="sc">!</span><span class="fu">is.na</span>(user_dates<span class="sc">$</span>T1Date)) <span class="sc">*</span> <span class="dv">8</span> <span class="sc">+</span></span>
+<span id="cb1-478"><a href="#cb1-478" aria-hidden="true" tabindex="-1"></a>                       <span class="fu">sum</span>(<span class="sc">!</span><span class="fu">is.na</span>(user_dates<span class="sc">$</span>T2Date)) <span class="sc">*</span> <span class="dv">6</span> <span class="sc">+</span></span>
+<span id="cb1-479"><a href="#cb1-479" aria-hidden="true" tabindex="-1"></a>                       <span class="fu">sum</span>(<span class="sc">!</span><span class="fu">is.na</span>(user_dates<span class="sc">$</span>T3Date)) <span class="sc">*</span> <span class="dv">8</span> <span class="sc">+</span></span>
+<span id="cb1-480"><a href="#cb1-480" aria-hidden="true" tabindex="-1"></a>                       <span class="fu">sum</span>(<span class="sc">!</span><span class="fu">is.na</span>(user_dates<span class="sc">$</span>T4Date)) <span class="sc">*</span> <span class="dv">6</span> <span class="sc">+</span></span>
+<span id="cb1-481"><a href="#cb1-481" aria-hidden="true" tabindex="-1"></a>                       <span class="fu">sum</span>(<span class="sc">!</span><span class="fu">is.na</span>(user_dates<span class="sc">$</span>T5Date)) <span class="sc">*</span> <span class="dv">8</span>,</span>
+<span id="cb1-482"><a href="#cb1-482" aria-hidden="true" tabindex="-1"></a>                       <span class="st">&quot; expected cells).&quot;</span>))</span>
+<span id="cb1-483"><a href="#cb1-483" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb1-484"><a href="#cb1-484" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-485"><a href="#cb1-485" aria-hidden="true" tabindex="-1"></a><span class="in">```{r missingness-by-visit-chart, fig.height=4.5}</span></span>
-<span id="cb1-486"><a href="#cb1-486" aria-hidden="true" tabindex="-1"></a>miss_cells <span class="sc">|&gt;</span></span>
-<span id="cb1-487"><a href="#cb1-487" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">reason =</span> <span class="fu">factor</span>(reason, <span class="at">levels =</span> reason_order),</span>
-<span id="cb1-488"><a href="#cb1-488" aria-hidden="true" tabindex="-1"></a>         <span class="at">visit  =</span> <span class="fu">factor</span>(visit, <span class="at">levels =</span> <span class="fu">paste0</span>(<span class="st">&quot;T&quot;</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>))) <span class="sc">|&gt;</span></span>
-<span id="cb1-489"><a href="#cb1-489" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(visit, reason) <span class="sc">|&gt;</span></span>
-<span id="cb1-490"><a href="#cb1-490" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> visit, <span class="at">y =</span> n, <span class="at">fill =</span> reason)) <span class="sc">+</span></span>
-<span id="cb1-491"><a href="#cb1-491" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">width =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
-<span id="cb1-492"><a href="#cb1-492" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">ifelse</span>(n <span class="sc">&gt;</span> <span class="dv">0</span>, n, <span class="st">&quot;&quot;</span>)),</span>
-<span id="cb1-493"><a href="#cb1-493" aria-hidden="true" tabindex="-1"></a>            <span class="at">position =</span> <span class="fu">position_stack</span>(<span class="at">vjust =</span> <span class="fl">0.5</span>),</span>
-<span id="cb1-494"><a href="#cb1-494" aria-hidden="true" tabindex="-1"></a>            <span class="at">color =</span> <span class="st">&quot;white&quot;</span>, <span class="at">fontface =</span> <span class="st">&quot;bold&quot;</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
-<span id="cb1-495"><a href="#cb1-495" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> pal, <span class="at">name =</span> <span class="st">&quot;Reason&quot;</span>) <span class="sc">+</span></span>
-<span id="cb1-496"><a href="#cb1-496" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">mult =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.1</span>))) <span class="sc">+</span></span>
-<span id="cb1-497"><a href="#cb1-497" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Missing heatmap cells per visit, attributed by reason (Germany)&quot;</span>,</span>
-<span id="cb1-498"><a href="#cb1-498" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Visit&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Missing cells&quot;</span>) <span class="sc">+</span></span>
-<span id="cb1-499"><a href="#cb1-499" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">11</span>) <span class="sc">+</span></span>
-<span id="cb1-500"><a href="#cb1-500" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">9</span>),</span>
-<span id="cb1-501"><a href="#cb1-501" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid.major.x =</span> <span class="fu">element_blank</span>())</span>
-<span id="cb1-502"><a href="#cb1-502" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-503"><a href="#cb1-503" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-504"><a href="#cb1-504" aria-hidden="true" tabindex="-1"></a><span class="fu">### Detail — participants and visits affected, by reason</span></span>
+<span id="cb1-485"><a href="#cb1-485" aria-hidden="true" tabindex="-1"></a>Missing data is heavily concentrated at T3 (31 of 37 cells), which is also the visit with the highest attendance among assessment visits. This is not contradictory: T3 is the point at which many participants with progressive disease had deteriorated enough to make the 6MWT unsafe or impractical, while still attending the visit itself. The 4 missing cells at T1 reflect early-visit contraindications (blood pressure, dyspnoea) that prevented 6MWT from being performed at the very first assessment.</span>
+<span id="cb1-486"><a href="#cb1-486" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-487"><a href="#cb1-487" aria-hidden="true" tabindex="-1"></a><span class="in">```{r missingness-by-visit-chart, fig.height=4.5}</span></span>
+<span id="cb1-488"><a href="#cb1-488" aria-hidden="true" tabindex="-1"></a>miss_cells <span class="sc">|&gt;</span></span>
+<span id="cb1-489"><a href="#cb1-489" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">reason =</span> <span class="fu">factor</span>(reason, <span class="at">levels =</span> reason_order),</span>
+<span id="cb1-490"><a href="#cb1-490" aria-hidden="true" tabindex="-1"></a>         <span class="at">visit  =</span> <span class="fu">factor</span>(visit, <span class="at">levels =</span> <span class="fu">paste0</span>(<span class="st">&quot;T&quot;</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb1-491"><a href="#cb1-491" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(visit, reason) <span class="sc">|&gt;</span></span>
+<span id="cb1-492"><a href="#cb1-492" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> visit, <span class="at">y =</span> n, <span class="at">fill =</span> reason)) <span class="sc">+</span></span>
+<span id="cb1-493"><a href="#cb1-493" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">width =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
+<span id="cb1-494"><a href="#cb1-494" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">ifelse</span>(n <span class="sc">&gt;</span> <span class="dv">0</span>, n, <span class="st">&quot;&quot;</span>)),</span>
+<span id="cb1-495"><a href="#cb1-495" aria-hidden="true" tabindex="-1"></a>            <span class="at">position =</span> <span class="fu">position_stack</span>(<span class="at">vjust =</span> <span class="fl">0.5</span>),</span>
+<span id="cb1-496"><a href="#cb1-496" aria-hidden="true" tabindex="-1"></a>            <span class="at">color =</span> <span class="st">&quot;white&quot;</span>, <span class="at">fontface =</span> <span class="st">&quot;bold&quot;</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb1-497"><a href="#cb1-497" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> pal, <span class="at">name =</span> <span class="st">&quot;Reason&quot;</span>) <span class="sc">+</span></span>
+<span id="cb1-498"><a href="#cb1-498" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">mult =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.1</span>))) <span class="sc">+</span></span>
+<span id="cb1-499"><a href="#cb1-499" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Missing heatmap cells per visit, attributed by reason (Germany)&quot;</span>,</span>
+<span id="cb1-500"><a href="#cb1-500" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Visit&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Missing cells&quot;</span>) <span class="sc">+</span></span>
+<span id="cb1-501"><a href="#cb1-501" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">11</span>) <span class="sc">+</span></span>
+<span id="cb1-502"><a href="#cb1-502" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">9</span>),</span>
+<span id="cb1-503"><a href="#cb1-503" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid.major.x =</span> <span class="fu">element_blank</span>())</span>
+<span id="cb1-504"><a href="#cb1-504" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb1-505"><a href="#cb1-505" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-506"><a href="#cb1-506" aria-hidden="true" tabindex="-1"></a>The clinical event group is dominated by 6MWT omissions due to respiratory and cardiovascular contraindications — elevated blood pressure, dyspnoea, stroke, fall-related mobility limitation, and exhaustion. Several participants contributed missing data at more than one visit (e.g. 21003 at T3 and T5; 21009 at T3 and T5), indicating persistent clinical limitations rather than isolated incidents. The 3 site logistics cells correspond to a single telephone visit (21024, T3) where physical assessments could not be performed because the patient could not attend in person, and a visit where no physicians were on site (21029, T3).</span>
+<span id="cb1-506"><a href="#cb1-506" aria-hidden="true" tabindex="-1"></a><span class="fu">### Detail — participants and visits affected, by reason</span></span>
 <span id="cb1-507"><a href="#cb1-507" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-508"><a href="#cb1-508" aria-hidden="true" tabindex="-1"></a><span class="in">```{r missingness-detail, results=&quot;asis&quot;}</span></span>
-<span id="cb1-509"><a href="#cb1-509" aria-hidden="true" tabindex="-1"></a>var_shortname <span class="ot">&lt;-</span> <span class="cf">function</span>(v) {</span>
-<span id="cb1-510"><a href="#cb1-510" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="at">spirometry_fev1Pred =</span> <span class="st">&quot;Spirometry&quot;</span>,</span>
-<span id="cb1-511"><a href="#cb1-511" aria-hidden="true" tabindex="-1"></a>    <span class="at">mmrc_SHTBTH1L       =</span> <span class="st">&quot;mMRC&quot;</span>,</span>
-<span id="cb1-512"><a href="#cb1-512" aria-hidden="true" tabindex="-1"></a>    <span class="at">cat_CATSCR1N        =</span> <span class="st">&quot;CAT&quot;</span>,</span>
-<span id="cb1-513"><a href="#cb1-513" aria-hidden="true" tabindex="-1"></a>    <span class="at">exacerbations_mild  =</span> <span class="st">&quot;Exac. mild&quot;</span>,</span>
-<span id="cb1-514"><a href="#cb1-514" aria-hidden="true" tabindex="-1"></a>    <span class="at">exacerbations_moderate =</span> <span class="st">&quot;Exac. mod.&quot;</span>,</span>
-<span id="cb1-515"><a href="#cb1-515" aria-hidden="true" tabindex="-1"></a>    <span class="at">exacerbations_severe   =</span> <span class="st">&quot;Exac. sev.&quot;</span>,</span>
-<span id="cb1-516"><a href="#cb1-516" aria-hidden="true" tabindex="-1"></a>    <span class="at">sixMinWT1_6mwd      =</span> <span class="st">&quot;6MWD&quot;</span>,</span>
-<span id="cb1-517"><a href="#cb1-517" aria-hidden="true" tabindex="-1"></a>    <span class="at">ccq_total           =</span> <span class="st">&quot;CCQ&quot;</span>)[v]</span>
-<span id="cb1-518"><a href="#cb1-518" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-519"><a href="#cb1-519" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-520"><a href="#cb1-520" aria-hidden="true" tabindex="-1"></a>sanitize_note <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb1-521"><a href="#cb1-521" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">&quot;</span><span class="sc">\\</span><span class="st">s*</span><span class="sc">\\</span><span class="st">|</span><span class="sc">\\</span><span class="st">s*&quot;</span>, <span class="st">&quot; / &quot;</span>, x)</span>
-<span id="cb1-522"><a href="#cb1-522" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">&quot;[</span><span class="sc">\r\n</span><span class="st">]+&quot;</span>, <span class="st">&quot; &quot;</span>, x)</span>
-<span id="cb1-523"><a href="#cb1-523" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">&quot;[[:space:]]+&quot;</span>, <span class="st">&quot; &quot;</span>, x)</span>
-<span id="cb1-524"><a href="#cb1-524" aria-hidden="true" tabindex="-1"></a>  <span class="fu">trimws</span>(x)</span>
-<span id="cb1-525"><a href="#cb1-525" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-526"><a href="#cb1-526" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-527"><a href="#cb1-527" aria-hidden="true" tabindex="-1"></a>note_clean_lookup <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
-<span id="cb1-528"><a href="#cb1-528" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;both 6 mwt was not performed because the patient does not feel well&quot;</span>  <span class="ot">=</span> <span class="st">&quot;Patient unwell; 6MWT not performed&quot;</span>,</span>
-<span id="cb1-529"><a href="#cb1-529" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;both 6mwt was not performed because the patient does not feel well&quot;</span>   <span class="ot">=</span> <span class="st">&quot;Patient unwell; 6MWT not performed&quot;</span>,</span>
-<span id="cb1-530"><a href="#cb1-530" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;due to the elevated blood pressure, it was decided not to perform a 6mwt.&quot;</span> <span class="ot">=</span> <span class="st">&quot;Elevated blood pressure; 6MWT not performed&quot;</span>,</span>
-<span id="cb1-531"><a href="#cb1-531" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;pat was in rehabilitation therapy.&quot;</span>   <span class="ot">=</span> <span class="st">&quot;Patient in rehabilitation&quot;</span>,</span>
-<span id="cb1-532"><a href="#cb1-532" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;no 6mwt were done due to knee pain&quot;</span>   <span class="ot">=</span> <span class="st">&quot;Knee pain; 6MWT not performed&quot;</span>,</span>
-<span id="cb1-533"><a href="#cb1-533" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;cancelled due to illness.&quot;</span>            <span class="ot">=</span> <span class="st">&quot;Illness; visit cancelled&quot;</span>,</span>
-<span id="cb1-534"><a href="#cb1-534" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;pat was ill&quot;</span>                          <span class="ot">=</span> <span class="st">&quot;Patient ill&quot;</span>,</span>
-<span id="cb1-535"><a href="#cb1-535" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;the both 6 mwt were not performed because the patient had increased dyspnea&quot;</span> <span class="ot">=</span> <span class="st">&quot;Increased dyspnoea; 6MWT not performed&quot;</span>,</span>
-<span id="cb1-536"><a href="#cb1-536" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;the both 6mwt were not performed because the patient had increased dyspnea&quot;</span>  <span class="ot">=</span> <span class="st">&quot;Increased dyspnoea; 6MWT not performed&quot;</span>,</span>
-<span id="cb1-537"><a href="#cb1-537" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;pis decision - no 6 mwts were performed because the blood pressure measured at rest was too high&quot;</span> <span class="ot">=</span> <span class="st">&quot;Elevated resting blood pressure (PI decision); 6MWT not performed&quot;</span>,</span>
-<span id="cb1-538"><a href="#cb1-538" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;patient was too exhausted, patient refused the 6mwt&quot;</span> <span class="ot">=</span> <span class="st">&quot;Patient exhausted; refused 6MWT&quot;</span>,</span>
-<span id="cb1-539"><a href="#cb1-539" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;both 6mwt were not done due to stroke in august 2025, investigator decision&quot;</span> <span class="ot">=</span> <span class="st">&quot;Stroke (Aug 2025); 6MWT not performed&quot;</span>,</span>
-<span id="cb1-540"><a href="#cb1-540" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;6mw-test was not performed, because the patient had limited mobility due to a fall. this visit is the last visit - study completed&quot;</span> <span class="ot">=</span> <span class="st">&quot;Limited mobility due to fall; 6MWT not performed&quot;</span>,</span>
-<span id="cb1-541"><a href="#cb1-541" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;visit was performed by telephone, patient could not come to our site&quot;</span> <span class="ot">=</span> <span class="st">&quot;Telephone visit; patient unable to attend site&quot;</span>,</span>
-<span id="cb1-542"><a href="#cb1-542" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;both 6mwt were not done due to no physicians were on the site&quot;</span> <span class="ot">=</span> <span class="st">&quot;No physician on site; 6MWT not performed&quot;</span></span>
-<span id="cb1-543"><a href="#cb1-543" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-544"><a href="#cb1-544" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-545"><a href="#cb1-545" aria-hidden="true" tabindex="-1"></a>apply_note_lookup <span class="ot">&lt;-</span> <span class="cf">function</span>(note) {</span>
-<span id="cb1-546"><a href="#cb1-546" aria-hidden="true" tabindex="-1"></a>  key <span class="ot">&lt;-</span> <span class="fu">tolower</span>(<span class="fu">trimws</span>(<span class="fu">gsub</span>(<span class="st">&quot;[[:space:]]+&quot;</span>, <span class="st">&quot; &quot;</span>, note)))</span>
-<span id="cb1-547"><a href="#cb1-547" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (key <span class="sc">%in%</span> <span class="fu">names</span>(note_clean_lookup)) note_clean_lookup[[key]] <span class="cf">else</span> note</span>
-<span id="cb1-548"><a href="#cb1-548" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-549"><a href="#cb1-549" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-550"><a href="#cb1-550" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (r <span class="cf">in</span> reason_order) {</span>
-<span id="cb1-551"><a href="#cb1-551" aria-hidden="true" tabindex="-1"></a>  sub <span class="ot">&lt;-</span> miss_combos <span class="sc">|&gt;</span> <span class="fu">filter</span>(reason <span class="sc">==</span> r) <span class="sc">|&gt;</span> <span class="fu">arrange</span>(userId, visit)</span>
-<span id="cb1-552"><a href="#cb1-552" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">nrow</span>(sub) <span class="sc">==</span> <span class="dv">0</span>) <span class="cf">next</span></span>
-<span id="cb1-553"><a href="#cb1-553" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n\n</span><span class="st">**&quot;</span>, r, <span class="st">&quot;** — &quot;</span>,</span>
-<span id="cb1-554"><a href="#cb1-554" aria-hidden="true" tabindex="-1"></a>      <span class="fu">sum</span>(miss_cells<span class="sc">$</span>reason <span class="sc">==</span> r), <span class="st">&quot; missing cells across &quot;</span>,</span>
-<span id="cb1-555"><a href="#cb1-555" aria-hidden="true" tabindex="-1"></a>      <span class="fu">nrow</span>(sub), <span class="st">&quot; participant-visits.</span><span class="sc">\n\n</span><span class="st">&quot;</span>, <span class="at">sep =</span> <span class="st">&quot;&quot;</span>)</span>
-<span id="cb1-556"><a href="#cb1-556" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-557"><a href="#cb1-557" aria-hidden="true" tabindex="-1"></a>  detail <span class="ot">&lt;-</span> sub <span class="sc">|&gt;</span></span>
-<span id="cb1-558"><a href="#cb1-558" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rowwise</span>() <span class="sc">|&gt;</span></span>
-<span id="cb1-559"><a href="#cb1-559" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
-<span id="cb1-560"><a href="#cb1-560" aria-hidden="true" tabindex="-1"></a>      <span class="at">vars_affected =</span> {</span>
-<span id="cb1-561"><a href="#cb1-561" aria-hidden="true" tabindex="-1"></a>        rows <span class="ot">&lt;-</span> miss_cells[miss_cells<span class="sc">$</span>userId <span class="sc">==</span> userId <span class="sc">&amp;</span> miss_cells<span class="sc">$</span>visit <span class="sc">==</span> visit, ]</span>
-<span id="cb1-562"><a href="#cb1-562" aria-hidden="true" tabindex="-1"></a>        <span class="fu">paste</span>(<span class="fu">unique</span>(<span class="fu">var_shortname</span>(rows<span class="sc">$</span>variable)), <span class="at">collapse =</span> <span class="st">&quot;, &quot;</span>)</span>
-<span id="cb1-563"><a href="#cb1-563" aria-hidden="true" tabindex="-1"></a>      },</span>
-<span id="cb1-564"><a href="#cb1-564" aria-hidden="true" tabindex="-1"></a>      <span class="at">note_clean =</span> <span class="fu">apply_note_lookup</span>(<span class="fu">sanitize_note</span>(note)),</span>
-<span id="cb1-565"><a href="#cb1-565" aria-hidden="true" tabindex="-1"></a>      <span class="at">note_display =</span> <span class="cf">if</span> (<span class="fu">nchar</span>(note_clean) <span class="sc">==</span> <span class="dv">0</span>) <span class="st">&quot;(blank)&quot;</span></span>
-<span id="cb1-566"><a href="#cb1-566" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> <span class="cf">if</span> (<span class="fu">nchar</span>(note_clean) <span class="sc">&gt;</span> <span class="dv">180</span>) <span class="fu">paste0</span>(<span class="fu">substr</span>(note_clean, <span class="dv">1</span>, <span class="dv">180</span>), <span class="st">&quot;…&quot;</span>)</span>
-<span id="cb1-567"><a href="#cb1-567" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> note_clean</span>
-<span id="cb1-568"><a href="#cb1-568" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
-<span id="cb1-569"><a href="#cb1-569" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ungroup</span>() <span class="sc">|&gt;</span></span>
-<span id="cb1-570"><a href="#cb1-570" aria-hidden="true" tabindex="-1"></a>    <span class="fu">transmute</span>(<span class="at">ID =</span> userId, <span class="at">Visit =</span> visit,</span>
-<span id="cb1-571"><a href="#cb1-571" aria-hidden="true" tabindex="-1"></a>              <span class="st">`</span><span class="at">Vars missing</span><span class="st">`</span> <span class="ot">=</span> vars_affected,</span>
-<span id="cb1-572"><a href="#cb1-572" aria-hidden="true" tabindex="-1"></a>              <span class="at">Note =</span> note_display)</span>
-<span id="cb1-573"><a href="#cb1-573" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-574"><a href="#cb1-574" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">nrow</span>(detail) <span class="sc">&gt;</span> <span class="dv">1</span>) {</span>
-<span id="cb1-575"><a href="#cb1-575" aria-hidden="true" tabindex="-1"></a>    repeats <span class="ot">&lt;-</span> <span class="fu">duplicated</span>(detail<span class="sc">$</span>ID)</span>
-<span id="cb1-576"><a href="#cb1-576" aria-hidden="true" tabindex="-1"></a>    detail<span class="sc">$</span>ID[repeats] <span class="ot">&lt;-</span> <span class="st">&quot;&quot;</span></span>
-<span id="cb1-577"><a href="#cb1-577" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-578"><a href="#cb1-578" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-579"><a href="#cb1-579" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="fu">kable</span>(detail))</span>
-<span id="cb1-580"><a href="#cb1-580" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-581"><a href="#cb1-581" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-582"><a href="#cb1-582" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-583"><a href="#cb1-583" aria-hidden="true" tabindex="-1"></a><span class="fu"># Data quality findings — items for PRI review</span></span>
+<span id="cb1-508"><a href="#cb1-508" aria-hidden="true" tabindex="-1"></a>The clinical event group is dominated by 6MWT omissions due to respiratory and cardiovascular contraindications — elevated blood pressure, dyspnoea, stroke, fall-related mobility limitation, and exhaustion. Several participants contributed missing data at more than one visit (e.g. 21003 at T3 and T5; 21009 at T3 and T5), indicating persistent clinical limitations rather than isolated incidents. The 3 site logistics cells correspond to a single telephone visit (21024, T3) where physical assessments could not be performed because the patient could not attend in person, and a visit where no physicians were on site (21029, T3).</span>
+<span id="cb1-509"><a href="#cb1-509" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-510"><a href="#cb1-510" aria-hidden="true" tabindex="-1"></a><span class="in">```{r missingness-detail, results=&quot;asis&quot;}</span></span>
+<span id="cb1-511"><a href="#cb1-511" aria-hidden="true" tabindex="-1"></a>var_shortname <span class="ot">&lt;-</span> <span class="cf">function</span>(v) {</span>
+<span id="cb1-512"><a href="#cb1-512" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="at">spirometry_fev1Pred =</span> <span class="st">&quot;Spirometry&quot;</span>,</span>
+<span id="cb1-513"><a href="#cb1-513" aria-hidden="true" tabindex="-1"></a>    <span class="at">mmrc_SHTBTH1L       =</span> <span class="st">&quot;mMRC&quot;</span>,</span>
+<span id="cb1-514"><a href="#cb1-514" aria-hidden="true" tabindex="-1"></a>    <span class="at">cat_CATSCR1N        =</span> <span class="st">&quot;CAT&quot;</span>,</span>
+<span id="cb1-515"><a href="#cb1-515" aria-hidden="true" tabindex="-1"></a>    <span class="at">exacerbations_mild  =</span> <span class="st">&quot;Exac. mild&quot;</span>,</span>
+<span id="cb1-516"><a href="#cb1-516" aria-hidden="true" tabindex="-1"></a>    <span class="at">exacerbations_moderate =</span> <span class="st">&quot;Exac. mod.&quot;</span>,</span>
+<span id="cb1-517"><a href="#cb1-517" aria-hidden="true" tabindex="-1"></a>    <span class="at">exacerbations_severe   =</span> <span class="st">&quot;Exac. sev.&quot;</span>,</span>
+<span id="cb1-518"><a href="#cb1-518" aria-hidden="true" tabindex="-1"></a>    <span class="at">sixMinWT1_6mwd      =</span> <span class="st">&quot;6MWD&quot;</span>,</span>
+<span id="cb1-519"><a href="#cb1-519" aria-hidden="true" tabindex="-1"></a>    <span class="at">ccq_total           =</span> <span class="st">&quot;CCQ&quot;</span>)[v]</span>
+<span id="cb1-520"><a href="#cb1-520" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-521"><a href="#cb1-521" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-522"><a href="#cb1-522" aria-hidden="true" tabindex="-1"></a>sanitize_note <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb1-523"><a href="#cb1-523" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">&quot;</span><span class="sc">\\</span><span class="st">s*</span><span class="sc">\\</span><span class="st">|</span><span class="sc">\\</span><span class="st">s*&quot;</span>, <span class="st">&quot; / &quot;</span>, x)</span>
+<span id="cb1-524"><a href="#cb1-524" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">&quot;[</span><span class="sc">\r\n</span><span class="st">]+&quot;</span>, <span class="st">&quot; &quot;</span>, x)</span>
+<span id="cb1-525"><a href="#cb1-525" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">&quot;[[:space:]]+&quot;</span>, <span class="st">&quot; &quot;</span>, x)</span>
+<span id="cb1-526"><a href="#cb1-526" aria-hidden="true" tabindex="-1"></a>  <span class="fu">trimws</span>(x)</span>
+<span id="cb1-527"><a href="#cb1-527" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-528"><a href="#cb1-528" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-529"><a href="#cb1-529" aria-hidden="true" tabindex="-1"></a>note_clean_lookup <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb1-530"><a href="#cb1-530" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;both 6 mwt was not performed because the patient does not feel well&quot;</span>  <span class="ot">=</span> <span class="st">&quot;Patient unwell; 6MWT not performed&quot;</span>,</span>
+<span id="cb1-531"><a href="#cb1-531" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;both 6mwt was not performed because the patient does not feel well&quot;</span>   <span class="ot">=</span> <span class="st">&quot;Patient unwell; 6MWT not performed&quot;</span>,</span>
+<span id="cb1-532"><a href="#cb1-532" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;due to the elevated blood pressure, it was decided not to perform a 6mwt.&quot;</span> <span class="ot">=</span> <span class="st">&quot;Elevated blood pressure; 6MWT not performed&quot;</span>,</span>
+<span id="cb1-533"><a href="#cb1-533" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;pat was in rehabilitation therapy.&quot;</span>   <span class="ot">=</span> <span class="st">&quot;Patient in rehabilitation&quot;</span>,</span>
+<span id="cb1-534"><a href="#cb1-534" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;no 6mwt were done due to knee pain&quot;</span>   <span class="ot">=</span> <span class="st">&quot;Knee pain; 6MWT not performed&quot;</span>,</span>
+<span id="cb1-535"><a href="#cb1-535" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;cancelled due to illness.&quot;</span>            <span class="ot">=</span> <span class="st">&quot;Illness; visit cancelled&quot;</span>,</span>
+<span id="cb1-536"><a href="#cb1-536" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;pat was ill&quot;</span>                          <span class="ot">=</span> <span class="st">&quot;Patient ill&quot;</span>,</span>
+<span id="cb1-537"><a href="#cb1-537" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;the both 6 mwt were not performed because the patient had increased dyspnea&quot;</span> <span class="ot">=</span> <span class="st">&quot;Increased dyspnoea; 6MWT not performed&quot;</span>,</span>
+<span id="cb1-538"><a href="#cb1-538" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;the both 6mwt were not performed because the patient had increased dyspnea&quot;</span>  <span class="ot">=</span> <span class="st">&quot;Increased dyspnoea; 6MWT not performed&quot;</span>,</span>
+<span id="cb1-539"><a href="#cb1-539" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;pis decision - no 6 mwts were performed because the blood pressure measured at rest was too high&quot;</span> <span class="ot">=</span> <span class="st">&quot;Elevated resting blood pressure (PI decision); 6MWT not performed&quot;</span>,</span>
+<span id="cb1-540"><a href="#cb1-540" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;patient was too exhausted, patient refused the 6mwt&quot;</span> <span class="ot">=</span> <span class="st">&quot;Patient exhausted; refused 6MWT&quot;</span>,</span>
+<span id="cb1-541"><a href="#cb1-541" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;both 6mwt were not done due to stroke in august 2025, investigator decision&quot;</span> <span class="ot">=</span> <span class="st">&quot;Stroke (Aug 2025); 6MWT not performed&quot;</span>,</span>
+<span id="cb1-542"><a href="#cb1-542" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;6mw-test was not performed, because the patient had limited mobility due to a fall. this visit is the last visit - study completed&quot;</span> <span class="ot">=</span> <span class="st">&quot;Limited mobility due to fall; 6MWT not performed&quot;</span>,</span>
+<span id="cb1-543"><a href="#cb1-543" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;visit was performed by telephone, patient could not come to our site&quot;</span> <span class="ot">=</span> <span class="st">&quot;Telephone visit; patient unable to attend site&quot;</span>,</span>
+<span id="cb1-544"><a href="#cb1-544" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;both 6mwt were not done due to no physicians were on the site&quot;</span> <span class="ot">=</span> <span class="st">&quot;No physician on site; 6MWT not performed&quot;</span></span>
+<span id="cb1-545"><a href="#cb1-545" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-546"><a href="#cb1-546" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-547"><a href="#cb1-547" aria-hidden="true" tabindex="-1"></a>apply_note_lookup <span class="ot">&lt;-</span> <span class="cf">function</span>(note) {</span>
+<span id="cb1-548"><a href="#cb1-548" aria-hidden="true" tabindex="-1"></a>  key <span class="ot">&lt;-</span> <span class="fu">tolower</span>(<span class="fu">trimws</span>(<span class="fu">gsub</span>(<span class="st">&quot;[[:space:]]+&quot;</span>, <span class="st">&quot; &quot;</span>, note)))</span>
+<span id="cb1-549"><a href="#cb1-549" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (key <span class="sc">%in%</span> <span class="fu">names</span>(note_clean_lookup)) note_clean_lookup[[key]] <span class="cf">else</span> note</span>
+<span id="cb1-550"><a href="#cb1-550" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-551"><a href="#cb1-551" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-552"><a href="#cb1-552" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (r <span class="cf">in</span> reason_order) {</span>
+<span id="cb1-553"><a href="#cb1-553" aria-hidden="true" tabindex="-1"></a>  sub <span class="ot">&lt;-</span> miss_combos <span class="sc">|&gt;</span> <span class="fu">filter</span>(reason <span class="sc">==</span> r) <span class="sc">|&gt;</span> <span class="fu">arrange</span>(userId, visit)</span>
+<span id="cb1-554"><a href="#cb1-554" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">nrow</span>(sub) <span class="sc">==</span> <span class="dv">0</span>) <span class="cf">next</span></span>
+<span id="cb1-555"><a href="#cb1-555" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n\n</span><span class="st">**&quot;</span>, r, <span class="st">&quot;** — &quot;</span>,</span>
+<span id="cb1-556"><a href="#cb1-556" aria-hidden="true" tabindex="-1"></a>      <span class="fu">sum</span>(miss_cells<span class="sc">$</span>reason <span class="sc">==</span> r), <span class="st">&quot; missing cells across &quot;</span>,</span>
+<span id="cb1-557"><a href="#cb1-557" aria-hidden="true" tabindex="-1"></a>      <span class="fu">nrow</span>(sub), <span class="st">&quot; participant-visits.</span><span class="sc">\n\n</span><span class="st">&quot;</span>, <span class="at">sep =</span> <span class="st">&quot;&quot;</span>)</span>
+<span id="cb1-558"><a href="#cb1-558" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-559"><a href="#cb1-559" aria-hidden="true" tabindex="-1"></a>  detail <span class="ot">&lt;-</span> sub <span class="sc">|&gt;</span></span>
+<span id="cb1-560"><a href="#cb1-560" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rowwise</span>() <span class="sc">|&gt;</span></span>
+<span id="cb1-561"><a href="#cb1-561" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb1-562"><a href="#cb1-562" aria-hidden="true" tabindex="-1"></a>      <span class="at">vars_affected =</span> {</span>
+<span id="cb1-563"><a href="#cb1-563" aria-hidden="true" tabindex="-1"></a>        rows <span class="ot">&lt;-</span> miss_cells[miss_cells<span class="sc">$</span>userId <span class="sc">==</span> userId <span class="sc">&amp;</span> miss_cells<span class="sc">$</span>visit <span class="sc">==</span> visit, ]</span>
+<span id="cb1-564"><a href="#cb1-564" aria-hidden="true" tabindex="-1"></a>        <span class="fu">paste</span>(<span class="fu">unique</span>(<span class="fu">var_shortname</span>(rows<span class="sc">$</span>variable)), <span class="at">collapse =</span> <span class="st">&quot;, &quot;</span>)</span>
+<span id="cb1-565"><a href="#cb1-565" aria-hidden="true" tabindex="-1"></a>      },</span>
+<span id="cb1-566"><a href="#cb1-566" aria-hidden="true" tabindex="-1"></a>      <span class="at">note_clean =</span> <span class="fu">apply_note_lookup</span>(<span class="fu">sanitize_note</span>(note)),</span>
+<span id="cb1-567"><a href="#cb1-567" aria-hidden="true" tabindex="-1"></a>      <span class="at">note_display =</span> <span class="cf">if</span> (<span class="fu">nchar</span>(note_clean) <span class="sc">==</span> <span class="dv">0</span>) <span class="st">&quot;(blank)&quot;</span></span>
+<span id="cb1-568"><a href="#cb1-568" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> <span class="cf">if</span> (<span class="fu">nchar</span>(note_clean) <span class="sc">&gt;</span> <span class="dv">180</span>) <span class="fu">paste0</span>(<span class="fu">substr</span>(note_clean, <span class="dv">1</span>, <span class="dv">180</span>), <span class="st">&quot;…&quot;</span>)</span>
+<span id="cb1-569"><a href="#cb1-569" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span> note_clean</span>
+<span id="cb1-570"><a href="#cb1-570" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb1-571"><a href="#cb1-571" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ungroup</span>() <span class="sc">|&gt;</span></span>
+<span id="cb1-572"><a href="#cb1-572" aria-hidden="true" tabindex="-1"></a>    <span class="fu">transmute</span>(<span class="at">ID =</span> userId, <span class="at">Visit =</span> visit,</span>
+<span id="cb1-573"><a href="#cb1-573" aria-hidden="true" tabindex="-1"></a>              <span class="st">`</span><span class="at">Vars missing</span><span class="st">`</span> <span class="ot">=</span> vars_affected,</span>
+<span id="cb1-574"><a href="#cb1-574" aria-hidden="true" tabindex="-1"></a>              <span class="at">Note =</span> note_display)</span>
+<span id="cb1-575"><a href="#cb1-575" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-576"><a href="#cb1-576" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">nrow</span>(detail) <span class="sc">&gt;</span> <span class="dv">1</span>) {</span>
+<span id="cb1-577"><a href="#cb1-577" aria-hidden="true" tabindex="-1"></a>    repeats <span class="ot">&lt;-</span> <span class="fu">duplicated</span>(detail<span class="sc">$</span>ID)</span>
+<span id="cb1-578"><a href="#cb1-578" aria-hidden="true" tabindex="-1"></a>    detail<span class="sc">$</span>ID[repeats] <span class="ot">&lt;-</span> <span class="st">&quot;&quot;</span></span>
+<span id="cb1-579"><a href="#cb1-579" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-580"><a href="#cb1-580" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-581"><a href="#cb1-581" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="fu">kable</span>(detail))</span>
+<span id="cb1-582"><a href="#cb1-582" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-583"><a href="#cb1-583" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb1-584"><a href="#cb1-584" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-585"><a href="#cb1-585" aria-hidden="true" tabindex="-1"></a>The following items were identified during the data review and require action or confirmation from PRI before the D5.4 resubmission is finalised.</span>
+<span id="cb1-585"><a href="#cb1-585" aria-hidden="true" tabindex="-1"></a><span class="fu"># Data quality findings — items for PRI review</span></span>
 <span id="cb1-586"><a href="#cb1-586" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-587"><a href="#cb1-587" aria-hidden="true" tabindex="-1"></a><span class="fu">## Participants with no documentation of study ending</span></span>
+<span id="cb1-587"><a href="#cb1-587" aria-hidden="true" tabindex="-1"></a>The following items were identified during the data review and require action or confirmation from PRI before the D5.4 resubmission is finalised.</span>
 <span id="cb1-588"><a href="#cb1-588" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-589"><a href="#cb1-589" aria-hidden="true" tabindex="-1"></a>Three participants ended at T4 with complete visit data but no visit note explaining why T5 was not attended. Their T5 visits were due between July 2025 and February 2026, all of which preceded this export (April 2026). PRI is asked to confirm, for each participant, whether this was an undocumented withdrawal, a loss to follow-up, or an administrative gap.</span>
+<span id="cb1-589"><a href="#cb1-589" aria-hidden="true" tabindex="-1"></a><span class="fu">## Participants with no documentation of study ending</span></span>
 <span id="cb1-590"><a href="#cb1-590" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-591"><a href="#cb1-591" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Participant <span class="pp">|</span> T4 date <span class="pp">|</span> T5 expected <span class="pp">|</span> Status <span class="pp">|</span></span>
-<span id="cb1-592"><a href="#cb1-592" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------------|---------|-------------|--------|</span></span>
-<span id="cb1-593"><a href="#cb1-593" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 21010 <span class="pp">|</span> 2025-04-15 <span class="pp">|</span> ~2025-07-15 <span class="pp">|</span> No documentation <span class="pp">|</span></span>
-<span id="cb1-594"><a href="#cb1-594" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 21029 <span class="pp">|</span> 2025-10-24 <span class="pp">|</span> ~2026-01-23 <span class="pp">|</span> No documentation <span class="pp">|</span></span>
-<span id="cb1-595"><a href="#cb1-595" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 21030 <span class="pp">|</span> 2025-11-17 <span class="pp">|</span> ~2026-02-16 <span class="pp">|</span> No documentation <span class="pp">|</span></span>
-<span id="cb1-596"><a href="#cb1-596" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-597"><a href="#cb1-597" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-598"><a href="#cb1-598" aria-hidden="true" tabindex="-1"></a><span class="fu"># Baseline characteristics</span></span>
+<span id="cb1-591"><a href="#cb1-591" aria-hidden="true" tabindex="-1"></a>Three participants ended at T4 with complete visit data but no visit note explaining why T5 was not attended. Their T5 visits were due between July 2025 and February 2026, all of which preceded this export (April 2026). PRI is asked to confirm, for each participant, whether this was an undocumented withdrawal, a loss to follow-up, or an administrative gap.</span>
+<span id="cb1-592"><a href="#cb1-592" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-593"><a href="#cb1-593" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Participant <span class="pp">|</span> T4 date <span class="pp">|</span> T5 expected <span class="pp">|</span> Status <span class="pp">|</span></span>
+<span id="cb1-594"><a href="#cb1-594" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------------|---------|-------------|--------|</span></span>
+<span id="cb1-595"><a href="#cb1-595" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 21010 <span class="pp">|</span> 2025-04-15 <span class="pp">|</span> ~2025-07-15 <span class="pp">|</span> No documentation <span class="pp">|</span></span>
+<span id="cb1-596"><a href="#cb1-596" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 21029 <span class="pp">|</span> 2025-10-24 <span class="pp">|</span> ~2026-01-23 <span class="pp">|</span> No documentation <span class="pp">|</span></span>
+<span id="cb1-597"><a href="#cb1-597" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 21030 <span class="pp">|</span> 2025-11-17 <span class="pp">|</span> ~2026-02-16 <span class="pp">|</span> No documentation <span class="pp">|</span></span>
+<span id="cb1-598"><a href="#cb1-598" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-599"><a href="#cb1-599" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-600"><a href="#cb1-600" aria-hidden="true" tabindex="-1"></a>The cohort reflects a moderate-to-severe COPD population: mean FEV1% predicted of 49%, with all participants classified as GOLD grade 2 or above (21 GOLD 2, 22 GOLD 3, 3 GOLD 4) and none below 30% predicted at baseline. Mean age is 66 years with a slight male predominance (57%). This distribution is consistent with the CSA inclusion criteria and provides an appropriate disease-severity range for evaluating the CSB monitoring platform.</span>
+<span id="cb1-600"><a href="#cb1-600" aria-hidden="true" tabindex="-1"></a><span class="fu"># Baseline characteristics</span></span>
 <span id="cb1-601"><a href="#cb1-601" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-602"><a href="#cb1-602" aria-hidden="true" tabindex="-1"></a><span class="in">```{r baseline-table}</span></span>
-<span id="cb1-603"><a href="#cb1-603" aria-hidden="true" tabindex="-1"></a>baseline <span class="ot">&lt;-</span> visits<span class="sc">$</span>T1 <span class="sc">|&gt;</span></span>
-<span id="cb1-604"><a href="#cb1-604" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb1-605"><a href="#cb1-605" aria-hidden="true" tabindex="-1"></a>    <span class="at">age =</span> <span class="fu">as.numeric</span>(descriptives1_yob) <span class="sc">|&gt;</span></span>
-<span id="cb1-606"><a href="#cb1-606" aria-hidden="true" tabindex="-1"></a>      (\(y) <span class="fu">year</span>(<span class="fu">as.Date</span>(T1Date)) <span class="sc">-</span> y)(),</span>
-<span id="cb1-607"><a href="#cb1-607" aria-hidden="true" tabindex="-1"></a>    <span class="at">bmi =</span> <span class="fu">round</span>(<span class="fu">as.numeric</span>(descriptives2_weight) <span class="sc">/</span></span>
-<span id="cb1-608"><a href="#cb1-608" aria-hidden="true" tabindex="-1"></a>                  ((<span class="fu">as.numeric</span>(descriptives1_height) <span class="sc">/</span> <span class="dv">100</span>) <span class="sc">^</span> <span class="dv">2</span>), <span class="dv">1</span>),</span>
-<span id="cb1-609"><a href="#cb1-609" aria-hidden="true" tabindex="-1"></a>    <span class="at">sex =</span> <span class="fu">case_when</span>(descriptives1_sex <span class="sc">==</span> <span class="st">&quot;1&quot;</span> <span class="sc">~</span> <span class="st">&quot;Male&quot;</span>,</span>
-<span id="cb1-610"><a href="#cb1-610" aria-hidden="true" tabindex="-1"></a>                    descriptives1_sex <span class="sc">==</span> <span class="st">&quot;2&quot;</span> <span class="sc">~</span> <span class="st">&quot;Female&quot;</span>,</span>
-<span id="cb1-611"><a href="#cb1-611" aria-hidden="true" tabindex="-1"></a>                    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span>),</span>
-<span id="cb1-612"><a href="#cb1-612" aria-hidden="true" tabindex="-1"></a>    <span class="at">fev1_pred =</span> <span class="fu">as.numeric</span>(spirometry_fev1Pred),</span>
-<span id="cb1-613"><a href="#cb1-613" aria-hidden="true" tabindex="-1"></a>    <span class="at">fvc_pred  =</span> <span class="fu">as.numeric</span>(spirometry_fvcPred),</span>
-<span id="cb1-614"><a href="#cb1-614" aria-hidden="true" tabindex="-1"></a>    <span class="at">fev1_fvc  =</span> <span class="fu">as.numeric</span>(spirometry_lungRatio),</span>
-<span id="cb1-615"><a href="#cb1-615" aria-hidden="true" tabindex="-1"></a>    <span class="at">mmrc =</span> <span class="fu">as.numeric</span>(mmrc_SHTBTH1L),</span>
-<span id="cb1-616"><a href="#cb1-616" aria-hidden="true" tabindex="-1"></a>    <span class="at">cat  =</span> <span class="fu">as.numeric</span>(cat_CATSCR1N),</span>
-<span id="cb1-617"><a href="#cb1-617" aria-hidden="true" tabindex="-1"></a>    <span class="at">sixMWD =</span> <span class="fu">as.numeric</span>(sixMinWT1_6mwd),</span>
-<span id="cb1-618"><a href="#cb1-618" aria-hidden="true" tabindex="-1"></a>    <span class="at">ccq_total =</span> <span class="fu">rowMeans</span>(<span class="fu">across</span>(<span class="fu">c</span>(ccq_breath, ccq_physical, ccq_cold, ccq_depressed,</span>
-<span id="cb1-619"><a href="#cb1-619" aria-hidden="true" tabindex="-1"></a>                                  ccq_cough, ccq_phlegm, ccq_strenouspa, ccq_moderatepa,</span>
-<span id="cb1-620"><a href="#cb1-620" aria-hidden="true" tabindex="-1"></a>                                  ccq_daily, ccq_social), as.numeric), <span class="at">na.rm =</span> <span class="cn">FALSE</span>),</span>
-<span id="cb1-621"><a href="#cb1-621" aria-hidden="true" tabindex="-1"></a>    <span class="at">mod_exac =</span> <span class="fu">if_else</span>(<span class="fu">as.numeric</span>(exacerbate12_xModerate12) <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="st">&quot;&gt;= 1&quot;</span>, <span class="st">&quot;0&quot;</span>),</span>
-<span id="cb1-622"><a href="#cb1-622" aria-hidden="true" tabindex="-1"></a>    <span class="at">sev_exac =</span> <span class="fu">if_else</span>(<span class="fu">as.numeric</span>(exacerbate12_xSevere12)   <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="st">&quot;&gt;= 1&quot;</span>, <span class="st">&quot;0&quot;</span>),</span>
-<span id="cb1-623"><a href="#cb1-623" aria-hidden="true" tabindex="-1"></a>    <span class="at">gold =</span> <span class="fu">case_when</span>(</span>
-<span id="cb1-624"><a href="#cb1-624" aria-hidden="true" tabindex="-1"></a>      fev1_pred <span class="sc">&gt;=</span> <span class="dv">80</span> <span class="sc">~</span> <span class="st">&quot;GOLD 1 (&gt;=80%)&quot;</span>,</span>
-<span id="cb1-625"><a href="#cb1-625" aria-hidden="true" tabindex="-1"></a>      fev1_pred <span class="sc">&gt;=</span> <span class="dv">50</span> <span class="sc">~</span> <span class="st">&quot;GOLD 2 (50-79%)&quot;</span>,</span>
-<span id="cb1-626"><a href="#cb1-626" aria-hidden="true" tabindex="-1"></a>      fev1_pred <span class="sc">&gt;=</span> <span class="dv">30</span> <span class="sc">~</span> <span class="st">&quot;GOLD 3 (30-49%)&quot;</span>,</span>
-<span id="cb1-627"><a href="#cb1-627" aria-hidden="true" tabindex="-1"></a>      fev1_pred <span class="sc">&lt;</span>  <span class="dv">30</span> <span class="sc">~</span> <span class="st">&quot;GOLD 4 (&lt;30%)&quot;</span></span>
-<span id="cb1-628"><a href="#cb1-628" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb1-629"><a href="#cb1-629" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb1-630"><a href="#cb1-630" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(age, sex, bmi, fev1_pred, fvc_pred, fev1_fvc, gold,</span>
-<span id="cb1-631"><a href="#cb1-631" aria-hidden="true" tabindex="-1"></a>         mmrc, cat, ccq_total, mod_exac, sev_exac, sixMWD)</span>
-<span id="cb1-632"><a href="#cb1-632" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-633"><a href="#cb1-633" aria-hidden="true" tabindex="-1"></a>baseline <span class="sc">|&gt;</span></span>
-<span id="cb1-634"><a href="#cb1-634" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tbl_summary</span>(</span>
-<span id="cb1-635"><a href="#cb1-635" aria-hidden="true" tabindex="-1"></a>    <span class="at">label =</span> <span class="fu">list</span>(</span>
-<span id="cb1-636"><a href="#cb1-636" aria-hidden="true" tabindex="-1"></a>      age <span class="sc">~</span> <span class="st">&quot;Age (years)&quot;</span>,</span>
-<span id="cb1-637"><a href="#cb1-637" aria-hidden="true" tabindex="-1"></a>      sex <span class="sc">~</span> <span class="st">&quot;Sex&quot;</span>,</span>
-<span id="cb1-638"><a href="#cb1-638" aria-hidden="true" tabindex="-1"></a>      bmi <span class="sc">~</span> <span class="st">&quot;BMI (kg/m²)&quot;</span>,</span>
-<span id="cb1-639"><a href="#cb1-639" aria-hidden="true" tabindex="-1"></a>      fev1_pred <span class="sc">~</span> <span class="st">&quot;FEV1 (% predicted)&quot;</span>,</span>
-<span id="cb1-640"><a href="#cb1-640" aria-hidden="true" tabindex="-1"></a>      fvc_pred  <span class="sc">~</span> <span class="st">&quot;FVC (% predicted)&quot;</span>,</span>
-<span id="cb1-641"><a href="#cb1-641" aria-hidden="true" tabindex="-1"></a>      fev1_fvc  <span class="sc">~</span> <span class="st">&quot;FEV1/FVC ratio&quot;</span>,</span>
-<span id="cb1-642"><a href="#cb1-642" aria-hidden="true" tabindex="-1"></a>      gold      <span class="sc">~</span> <span class="st">&quot;GOLD grade&quot;</span>,</span>
-<span id="cb1-643"><a href="#cb1-643" aria-hidden="true" tabindex="-1"></a>      mmrc      <span class="sc">~</span> <span class="st">&quot;mMRC&quot;</span>,</span>
-<span id="cb1-644"><a href="#cb1-644" aria-hidden="true" tabindex="-1"></a>      cat       <span class="sc">~</span> <span class="st">&quot;CAT score&quot;</span>,</span>
-<span id="cb1-645"><a href="#cb1-645" aria-hidden="true" tabindex="-1"></a>      ccq_total <span class="sc">~</span> <span class="st">&quot;CCQ total (mean item score)&quot;</span>,</span>
-<span id="cb1-646"><a href="#cb1-646" aria-hidden="true" tabindex="-1"></a>      mod_exac  <span class="sc">~</span> <span class="st">&quot;Moderate exacerbations, prior year&quot;</span>,</span>
-<span id="cb1-647"><a href="#cb1-647" aria-hidden="true" tabindex="-1"></a>      sev_exac  <span class="sc">~</span> <span class="st">&quot;Severe exacerbations, prior year&quot;</span>,</span>
-<span id="cb1-648"><a href="#cb1-648" aria-hidden="true" tabindex="-1"></a>      sixMWD    <span class="sc">~</span> <span class="st">&quot;6-min walk distance (m)&quot;</span></span>
-<span id="cb1-649"><a href="#cb1-649" aria-hidden="true" tabindex="-1"></a>    ),</span>
-<span id="cb1-650"><a href="#cb1-650" aria-hidden="true" tabindex="-1"></a>    <span class="at">statistic =</span> <span class="fu">list</span>(</span>
-<span id="cb1-651"><a href="#cb1-651" aria-hidden="true" tabindex="-1"></a>      <span class="fu">all_continuous</span>() <span class="sc">~</span> <span class="st">&quot;{mean} ± {sd}&quot;</span>,</span>
-<span id="cb1-652"><a href="#cb1-652" aria-hidden="true" tabindex="-1"></a>      <span class="fu">all_categorical</span>() <span class="sc">~</span> <span class="st">&quot;{n} ({p}%)&quot;</span>,</span>
-<span id="cb1-653"><a href="#cb1-653" aria-hidden="true" tabindex="-1"></a>      <span class="fu">c</span>(cat, ccq_total, mmrc) <span class="sc">~</span> <span class="st">&quot;{median} ({p25} – {p75})&quot;</span></span>
-<span id="cb1-654"><a href="#cb1-654" aria-hidden="true" tabindex="-1"></a>    ),</span>
-<span id="cb1-655"><a href="#cb1-655" aria-hidden="true" tabindex="-1"></a>    <span class="at">digits =</span> <span class="fu">all_continuous</span>() <span class="sc">~</span> <span class="dv">1</span>,</span>
-<span id="cb1-656"><a href="#cb1-656" aria-hidden="true" tabindex="-1"></a>    <span class="at">type   =</span> <span class="fu">list</span>(mmrc <span class="sc">~</span> <span class="st">&quot;continuous&quot;</span>),</span>
-<span id="cb1-657"><a href="#cb1-657" aria-hidden="true" tabindex="-1"></a>    <span class="at">missing =</span> <span class="st">&quot;ifany&quot;</span>,</span>
-<span id="cb1-658"><a href="#cb1-658" aria-hidden="true" tabindex="-1"></a>    <span class="at">missing_text =</span> <span class="st">&quot;Missing&quot;</span></span>
-<span id="cb1-659"><a href="#cb1-659" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb1-660"><a href="#cb1-660" aria-hidden="true" tabindex="-1"></a>  <span class="fu">modify_header</span>(label <span class="sc">~</span> <span class="st">&quot;**Characteristic**&quot;</span>) <span class="sc">|&gt;</span></span>
-<span id="cb1-661"><a href="#cb1-661" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bold_labels</span>()</span>
-<span id="cb1-662"><a href="#cb1-662" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-663"><a href="#cb1-663" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-664"><a href="#cb1-664" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-602"><a href="#cb1-602" aria-hidden="true" tabindex="-1"></a>The cohort reflects a moderate-to-severe COPD population: mean FEV1% predicted of 49%, with all participants classified as GOLD grade 2 or above (21 GOLD 2, 22 GOLD 3, 3 GOLD 4) and none below 30% predicted at baseline. Mean age is 66 years with a slight male predominance (57%). This distribution is consistent with the CSA inclusion criteria and provides an appropriate disease-severity range for evaluating the CSB monitoring platform.</span>
+<span id="cb1-603"><a href="#cb1-603" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-604"><a href="#cb1-604" aria-hidden="true" tabindex="-1"></a><span class="in">```{r baseline-table}</span></span>
+<span id="cb1-605"><a href="#cb1-605" aria-hidden="true" tabindex="-1"></a>baseline <span class="ot">&lt;-</span> visits<span class="sc">$</span>T1 <span class="sc">|&gt;</span></span>
+<span id="cb1-606"><a href="#cb1-606" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb1-607"><a href="#cb1-607" aria-hidden="true" tabindex="-1"></a>    <span class="at">age =</span> <span class="fu">as.numeric</span>(descriptives1_yob) <span class="sc">|&gt;</span></span>
+<span id="cb1-608"><a href="#cb1-608" aria-hidden="true" tabindex="-1"></a>      (\(y) <span class="fu">year</span>(<span class="fu">as.Date</span>(T1Date)) <span class="sc">-</span> y)(),</span>
+<span id="cb1-609"><a href="#cb1-609" aria-hidden="true" tabindex="-1"></a>    <span class="at">bmi =</span> <span class="fu">round</span>(<span class="fu">as.numeric</span>(descriptives2_weight) <span class="sc">/</span></span>
+<span id="cb1-610"><a href="#cb1-610" aria-hidden="true" tabindex="-1"></a>                  ((<span class="fu">as.numeric</span>(descriptives1_height) <span class="sc">/</span> <span class="dv">100</span>) <span class="sc">^</span> <span class="dv">2</span>), <span class="dv">1</span>),</span>
+<span id="cb1-611"><a href="#cb1-611" aria-hidden="true" tabindex="-1"></a>    <span class="at">sex =</span> <span class="fu">case_when</span>(descriptives1_sex <span class="sc">==</span> <span class="st">&quot;1&quot;</span> <span class="sc">~</span> <span class="st">&quot;Male&quot;</span>,</span>
+<span id="cb1-612"><a href="#cb1-612" aria-hidden="true" tabindex="-1"></a>                    descriptives1_sex <span class="sc">==</span> <span class="st">&quot;2&quot;</span> <span class="sc">~</span> <span class="st">&quot;Female&quot;</span>,</span>
+<span id="cb1-613"><a href="#cb1-613" aria-hidden="true" tabindex="-1"></a>                    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span>),</span>
+<span id="cb1-614"><a href="#cb1-614" aria-hidden="true" tabindex="-1"></a>    <span class="at">fev1_pred =</span> <span class="fu">as.numeric</span>(spirometry_fev1Pred),</span>
+<span id="cb1-615"><a href="#cb1-615" aria-hidden="true" tabindex="-1"></a>    <span class="at">fvc_pred  =</span> <span class="fu">as.numeric</span>(spirometry_fvcPred),</span>
+<span id="cb1-616"><a href="#cb1-616" aria-hidden="true" tabindex="-1"></a>    <span class="at">fev1_fvc  =</span> <span class="fu">as.numeric</span>(spirometry_lungRatio),</span>
+<span id="cb1-617"><a href="#cb1-617" aria-hidden="true" tabindex="-1"></a>    <span class="at">mmrc =</span> <span class="fu">as.numeric</span>(mmrc_SHTBTH1L),</span>
+<span id="cb1-618"><a href="#cb1-618" aria-hidden="true" tabindex="-1"></a>    <span class="at">cat  =</span> <span class="fu">as.numeric</span>(cat_CATSCR1N),</span>
+<span id="cb1-619"><a href="#cb1-619" aria-hidden="true" tabindex="-1"></a>    <span class="at">sixMWD =</span> <span class="fu">as.numeric</span>(sixMinWT1_6mwd),</span>
+<span id="cb1-620"><a href="#cb1-620" aria-hidden="true" tabindex="-1"></a>    <span class="at">ccq_total =</span> <span class="fu">rowMeans</span>(<span class="fu">across</span>(<span class="fu">c</span>(ccq_breath, ccq_physical, ccq_cold, ccq_depressed,</span>
+<span id="cb1-621"><a href="#cb1-621" aria-hidden="true" tabindex="-1"></a>                                  ccq_cough, ccq_phlegm, ccq_strenouspa, ccq_moderatepa,</span>
+<span id="cb1-622"><a href="#cb1-622" aria-hidden="true" tabindex="-1"></a>                                  ccq_daily, ccq_social), as.numeric), <span class="at">na.rm =</span> <span class="cn">FALSE</span>),</span>
+<span id="cb1-623"><a href="#cb1-623" aria-hidden="true" tabindex="-1"></a>    <span class="at">mod_exac =</span> <span class="fu">if_else</span>(<span class="fu">as.numeric</span>(exacerbate12_xModerate12) <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="st">&quot;&gt;= 1&quot;</span>, <span class="st">&quot;0&quot;</span>),</span>
+<span id="cb1-624"><a href="#cb1-624" aria-hidden="true" tabindex="-1"></a>    <span class="at">sev_exac =</span> <span class="fu">if_else</span>(<span class="fu">as.numeric</span>(exacerbate12_xSevere12)   <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="st">&quot;&gt;= 1&quot;</span>, <span class="st">&quot;0&quot;</span>),</span>
+<span id="cb1-625"><a href="#cb1-625" aria-hidden="true" tabindex="-1"></a>    <span class="at">gold =</span> <span class="fu">case_when</span>(</span>
+<span id="cb1-626"><a href="#cb1-626" aria-hidden="true" tabindex="-1"></a>      fev1_pred <span class="sc">&gt;=</span> <span class="dv">80</span> <span class="sc">~</span> <span class="st">&quot;GOLD 1 (&gt;=80%)&quot;</span>,</span>
+<span id="cb1-627"><a href="#cb1-627" aria-hidden="true" tabindex="-1"></a>      fev1_pred <span class="sc">&gt;=</span> <span class="dv">50</span> <span class="sc">~</span> <span class="st">&quot;GOLD 2 (50-79%)&quot;</span>,</span>
+<span id="cb1-628"><a href="#cb1-628" aria-hidden="true" tabindex="-1"></a>      fev1_pred <span class="sc">&gt;=</span> <span class="dv">30</span> <span class="sc">~</span> <span class="st">&quot;GOLD 3 (30-49%)&quot;</span>,</span>
+<span id="cb1-629"><a href="#cb1-629" aria-hidden="true" tabindex="-1"></a>      fev1_pred <span class="sc">&lt;</span>  <span class="dv">30</span> <span class="sc">~</span> <span class="st">&quot;GOLD 4 (&lt;30%)&quot;</span></span>
+<span id="cb1-630"><a href="#cb1-630" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-631"><a href="#cb1-631" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb1-632"><a href="#cb1-632" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(age, sex, bmi, fev1_pred, fvc_pred, fev1_fvc, gold,</span>
+<span id="cb1-633"><a href="#cb1-633" aria-hidden="true" tabindex="-1"></a>         mmrc, cat, ccq_total, mod_exac, sev_exac, sixMWD)</span>
+<span id="cb1-634"><a href="#cb1-634" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-635"><a href="#cb1-635" aria-hidden="true" tabindex="-1"></a>baseline <span class="sc">|&gt;</span></span>
+<span id="cb1-636"><a href="#cb1-636" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tbl_summary</span>(</span>
+<span id="cb1-637"><a href="#cb1-637" aria-hidden="true" tabindex="-1"></a>    <span class="at">label =</span> <span class="fu">list</span>(</span>
+<span id="cb1-638"><a href="#cb1-638" aria-hidden="true" tabindex="-1"></a>      age <span class="sc">~</span> <span class="st">&quot;Age (years)&quot;</span>,</span>
+<span id="cb1-639"><a href="#cb1-639" aria-hidden="true" tabindex="-1"></a>      sex <span class="sc">~</span> <span class="st">&quot;Sex&quot;</span>,</span>
+<span id="cb1-640"><a href="#cb1-640" aria-hidden="true" tabindex="-1"></a>      bmi <span class="sc">~</span> <span class="st">&quot;BMI (kg/m²)&quot;</span>,</span>
+<span id="cb1-641"><a href="#cb1-641" aria-hidden="true" tabindex="-1"></a>      fev1_pred <span class="sc">~</span> <span class="st">&quot;FEV1 (% predicted)&quot;</span>,</span>
+<span id="cb1-642"><a href="#cb1-642" aria-hidden="true" tabindex="-1"></a>      fvc_pred  <span class="sc">~</span> <span class="st">&quot;FVC (% predicted)&quot;</span>,</span>
+<span id="cb1-643"><a href="#cb1-643" aria-hidden="true" tabindex="-1"></a>      fev1_fvc  <span class="sc">~</span> <span class="st">&quot;FEV1/FVC ratio&quot;</span>,</span>
+<span id="cb1-644"><a href="#cb1-644" aria-hidden="true" tabindex="-1"></a>      gold      <span class="sc">~</span> <span class="st">&quot;GOLD grade&quot;</span>,</span>
+<span id="cb1-645"><a href="#cb1-645" aria-hidden="true" tabindex="-1"></a>      mmrc      <span class="sc">~</span> <span class="st">&quot;mMRC&quot;</span>,</span>
+<span id="cb1-646"><a href="#cb1-646" aria-hidden="true" tabindex="-1"></a>      cat       <span class="sc">~</span> <span class="st">&quot;CAT score&quot;</span>,</span>
+<span id="cb1-647"><a href="#cb1-647" aria-hidden="true" tabindex="-1"></a>      ccq_total <span class="sc">~</span> <span class="st">&quot;CCQ total (mean item score)&quot;</span>,</span>
+<span id="cb1-648"><a href="#cb1-648" aria-hidden="true" tabindex="-1"></a>      mod_exac  <span class="sc">~</span> <span class="st">&quot;Moderate exacerbations, prior year&quot;</span>,</span>
+<span id="cb1-649"><a href="#cb1-649" aria-hidden="true" tabindex="-1"></a>      sev_exac  <span class="sc">~</span> <span class="st">&quot;Severe exacerbations, prior year&quot;</span>,</span>
+<span id="cb1-650"><a href="#cb1-650" aria-hidden="true" tabindex="-1"></a>      sixMWD    <span class="sc">~</span> <span class="st">&quot;6-min walk distance (m)&quot;</span></span>
+<span id="cb1-651"><a href="#cb1-651" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb1-652"><a href="#cb1-652" aria-hidden="true" tabindex="-1"></a>    <span class="at">statistic =</span> <span class="fu">list</span>(</span>
+<span id="cb1-653"><a href="#cb1-653" aria-hidden="true" tabindex="-1"></a>      <span class="fu">all_continuous</span>() <span class="sc">~</span> <span class="st">&quot;{mean} ± {sd}&quot;</span>,</span>
+<span id="cb1-654"><a href="#cb1-654" aria-hidden="true" tabindex="-1"></a>      <span class="fu">all_categorical</span>() <span class="sc">~</span> <span class="st">&quot;{n} ({p}%)&quot;</span>,</span>
+<span id="cb1-655"><a href="#cb1-655" aria-hidden="true" tabindex="-1"></a>      <span class="fu">c</span>(cat, ccq_total, mmrc) <span class="sc">~</span> <span class="st">&quot;{median} ({p25} – {p75})&quot;</span></span>
+<span id="cb1-656"><a href="#cb1-656" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb1-657"><a href="#cb1-657" aria-hidden="true" tabindex="-1"></a>    <span class="at">digits =</span> <span class="fu">all_continuous</span>() <span class="sc">~</span> <span class="dv">1</span>,</span>
+<span id="cb1-658"><a href="#cb1-658" aria-hidden="true" tabindex="-1"></a>    <span class="at">type   =</span> <span class="fu">list</span>(mmrc <span class="sc">~</span> <span class="st">&quot;continuous&quot;</span>),</span>
+<span id="cb1-659"><a href="#cb1-659" aria-hidden="true" tabindex="-1"></a>    <span class="at">missing =</span> <span class="st">&quot;ifany&quot;</span>,</span>
+<span id="cb1-660"><a href="#cb1-660" aria-hidden="true" tabindex="-1"></a>    <span class="at">missing_text =</span> <span class="st">&quot;Missing&quot;</span></span>
+<span id="cb1-661"><a href="#cb1-661" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb1-662"><a href="#cb1-662" aria-hidden="true" tabindex="-1"></a>  <span class="fu">modify_header</span>(label <span class="sc">~</span> <span class="st">&quot;**Characteristic**&quot;</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-663"><a href="#cb1-663" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bold_labels</span>()</span>
+<span id="cb1-664"><a href="#cb1-664" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb1-665"><a href="#cb1-665" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-666"><a href="#cb1-666" aria-hidden="true" tabindex="-1"></a>*Report generated `r format(Sys.time(), &quot;%Y-%m-%d %H:%M&quot;)` from `data.zip` (export `r format(file.info(&quot;data.zip&quot;)$mtime, &quot;%Y-%m-%d&quot;)`).*</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></div>
+<span id="cb1-666"><a href="#cb1-666" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-667"><a href="#cb1-667" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-668"><a href="#cb1-668" aria-hidden="true" tabindex="-1"></a>*Report generated `r format(Sys.time(), &quot;%Y-%m-%d %H:%M&quot;)` from `data.zip` (export `r format(file.info(&quot;data.zip&quot;)$mtime, &quot;%Y-%m-%d&quot;)`).*</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
